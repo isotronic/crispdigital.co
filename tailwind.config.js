@@ -5,8 +5,10 @@ export default defineConfig({
   theme: {
     extend: {
       colors: {
-        "crisp-green": "#33673b",
-        "crisp-orange": "#cc3f0c",
+        crisp: {
+          green: "#33673b",
+          orange: "#cc3f0c",
+        },
       },
     },
   },
