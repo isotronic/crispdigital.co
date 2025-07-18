@@ -4,29 +4,21 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const services = [
-    { name: "Web Design", href: "/services/web-design" },
     { name: "Web Development", href: "/services/web-development" },
-    { name: "E-commerce", href: "/services/ecommerce" },
-    { name: "SEO Optimization", href: "/services/seo" },
+    { name: "Web Design", href: "/services/web-design" },
+    { name: "Mobile App Development", href: "/services/mobile-app-development" },
     { name: "Maintenance", href: "/services/maintenance" },
-    { name: "Consulting", href: "/services/consulting" },
   ];
 
   const company = [
     { name: "About Us", href: "/about" },
-    { name: "Our Process", href: "/process" },
     { name: "Portfolio", href: "/portfolio" },
-    { name: "Testimonials", href: "/testimonials" },
     { name: "Blog", href: "/blog" },
-    { name: "Careers", href: "/careers" },
   ];
 
   const resources = [
-    { name: "Documentation", href: "/docs" },
-    { name: "Support Center", href: "/support" },
     { name: "Privacy Policy", href: "/privacy" },
     { name: "Terms of Service", href: "/terms" },
-    { name: "Cookie Policy", href: "/cookies" },
     { name: "Sitemap", href: "/sitemap" },
   ];
 
@@ -120,7 +112,7 @@ const Footer = () => {
         </div>
 
         {/* Newsletter Signup */}
-        <div className="mt-12 pt-8 border-t border-gray-800">
+        {/* <div className="mt-12 pt-8 border-t border-gray-800">
           <div className="flex flex-col lg:flex-row justify-between items-center">
             <div className="mb-4 lg:mb-0">
               <h3 className="text-lg font-semibold text-crisp-green mb-2">Stay Updated</h3>
@@ -142,7 +134,7 @@ const Footer = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Bottom Footer */}
