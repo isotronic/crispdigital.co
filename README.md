@@ -1,6 +1,6 @@
-# Crisp Digital - Web Development Agency
+# crispdigital - Web Development Agency
 
-A modern, high-performance website for Crisp Digital, a web development freelance/agency business. Built with Astro, React, and Tailwind CSS for optimal performance and developer experience.
+A modern, high-performance website for crispdigital, a web development freelance/agency business. Built with Astro, React, and Tailwind CSS for optimal performance and developer experience.
 
 ## 🚀 Tech Stack
 
@@ -46,4 +46,4 @@ The site is deployed to Cloudflare Pages with Astro's static site generation.
 
 ## 📞 Contact
 
-This website represents Crisp Digital's web development services. For business inquiries, please visit the deployed site.
+This website represents crispdigital's web development services. For business inquiries, please visit the deployed site.
