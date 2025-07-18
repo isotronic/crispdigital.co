@@ -30,8 +30,8 @@ const ServicesPreview: React.FC = () => {
           <div className="inline-flex items-center justify-center w-12 h-12 bg-crisp-orange/10 rounded-full mb-4">
             <FaMobile className="w-6 h-6 text-crisp-orange" />
           </div>
-          <h3 className="font-semibold text-crisp-green mb-2">Mobile Apps</h3>
-          <p className="text-gray-600 text-sm">iOS and Android applications</p>
+          <h3 className="font-semibold text-crisp-green mb-2">React Native Apps</h3>
+          <p className="text-gray-600 text-sm">Cross-platform mobile applications</p>
         </div>
         <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-200">
           <div className="inline-flex items-center justify-center w-12 h-12 bg-crisp-orange/10 rounded-full mb-4">
