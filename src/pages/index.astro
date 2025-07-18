@@ -3,8 +3,33 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<div class="container mx-auto px-4 py-8">
-		<h1 class="text-4xl font-bold text-crisp-green mb-4">Welcome to Crisp Digital</h1>
-		<p class="text-lg text-gray-600">Your trusted web development partner</p>
+	<div class="container mx-auto px-4 py-16">
+		<div class="text-center mb-16">
+			<h1 class="text-5xl font-bold text-crisp-green mb-6">Welcome to crispdigital</h1>
+			<p class="text-xl text-gray-600 max-w-2xl mx-auto">
+				Your trusted web development partner. We create stunning, high-performance websites that drive results and grow your business.
+			</p>
+		</div>
+		
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+			<div class="bg-white p-8 rounded-lg shadow-md">
+				<h3 class="text-xl font-semibold text-crisp-green mb-4">Custom Web Development</h3>
+				<p class="text-gray-600">Tailored solutions built with modern technologies to meet your unique business needs.</p>
+			</div>
+			<div class="bg-white p-8 rounded-lg shadow-md">
+				<h3 class="text-xl font-semibold text-crisp-green mb-4">Responsive Design</h3>
+				<p class="text-gray-600">Mobile-first approach ensuring your website looks perfect on all devices.</p>
+			</div>
+			<div class="bg-white p-8 rounded-lg shadow-md">
+				<h3 class="text-xl font-semibold text-crisp-green mb-4">Performance Optimization</h3>
+				<p class="text-gray-600">Lightning-fast loading speeds and excellent user experience guaranteed.</p>
+			</div>
+		</div>
+		
+		<div class="text-center">
+			<a href="/contact" class="bg-crisp-orange hover:bg-crisp-orange/90 text-white px-8 py-3 rounded-lg font-medium text-lg transition-colors duration-200">
+				Start Your Project
+			</a>
+		</div>
 	</div>
 </Layout>
