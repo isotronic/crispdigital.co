@@ -8,6 +8,7 @@ const Footer = () => {
     { name: "Web Development", href: "/services/web-development" },
     { name: "Web Design", href: "/services/web-design" },
     { name: "Mobile App Development", href: "/services/mobile-app-development" },
+    { name: "WordPress Development", href: "/services/wordpress" },
     { name: "Maintenance", href: "/services/maintenance" },
   ];
 

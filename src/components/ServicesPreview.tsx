@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCode, FaPalette, FaMobile, FaTools } from "react-icons/fa";
+import { FaCode, FaPalette, FaMobile, FaTools, FaWordpress } from "react-icons/fa";
 
 const ServicesPreview: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const ServicesPreview: React.FC = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
         <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-200">
           <div className="inline-flex items-center justify-center w-12 h-12 bg-crisp-orange/10 rounded-full mb-4">
             <FaCode className="w-6 h-6 text-crisp-orange" />
@@ -39,6 +39,13 @@ const ServicesPreview: React.FC = () => {
           </div>
           <h3 className="font-semibold text-crisp-green mb-2">Maintenance</h3>
           <p className="text-gray-600 text-sm">Ongoing support and updates</p>
+        </div>
+        <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-200">
+          <div className="inline-flex items-center justify-center w-12 h-12 bg-crisp-orange/10 rounded-full mb-4">
+            <FaWordpress className="w-6 h-6 text-crisp-orange" />
+          </div>
+          <h3 className="font-semibold text-crisp-green mb-2">WordPress</h3>
+          <p className="text-gray-600 text-sm">Complete sites and management</p>
         </div>
       </div>
 

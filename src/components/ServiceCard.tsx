@@ -1,8 +1,8 @@
 import React from "react";
-import { FaStar, FaPalette, FaMobileAlt, FaTools } from "react-icons/fa";
+import { FaStar, FaPalette, FaMobileAlt, FaTools, FaWordpress } from "react-icons/fa";
 
 interface ServiceCardProps {
-  type: "web-development" | "web-design" | "mobile-app" | "maintenance";
+  type: "web-development" | "web-design" | "mobile-app" | "maintenance" | "wordpress";
   title: string;
   description: string;
   features: string[];
@@ -19,6 +19,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ type, title, description, fea
         return <FaMobileAlt className="w-8 h-8 mr-3 text-crisp-orange" />;
       case "maintenance":
         return <FaTools className="w-8 h-8 mr-3 text-crisp-orange" />;
+      case "wordpress":
+        return <FaWordpress className="w-8 h-8 mr-3 text-crisp-orange" />;
       default:
         return <FaStar className="w-8 h-8 mr-3 text-crisp-orange" />;
     }
