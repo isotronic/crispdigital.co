@@ -25,13 +25,13 @@ const Header = () => {
             <img
               className="hidden md:block h-8 w-auto"
               src="/src/assets/crispdigital-variation.png"
-              alt="Crisp Digital"
+              alt="crispdigital"
             />
             {/* Small logo for mobile */}
             <img
               className="block md:hidden h-8 w-auto"
               src="/src/assets/crispdigital-logo-small.png"
-              alt="Crisp Digital"
+              alt="crispdigital"
             />
           </div>
 
