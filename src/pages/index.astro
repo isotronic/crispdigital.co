@@ -1,35 +1,62 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import FeaturesSection from '../components/FeaturesSection.tsx';
+import ServicesPreview from '../components/ServicesPreview.tsx';
 ---
 
 <Layout>
-	<div class="py-16">
+	<!-- Hero Section -->
+	<div class="py-20 lg:py-24">
 		<div class="text-center mb-16">
-			<h1 class="text-5xl font-bold text-crisp-green mb-6">Welcome to crispdigital</h1>
-			<p class="text-xl text-gray-600 max-w-2xl mx-auto">
-				Your trusted web development partner. We create stunning, high-performance websites that drive results and grow your business.
+			<h1 class="text-4xl md:text-6xl font-bold text-crisp-green mb-6">
+				Digital Solutions That <span class="text-crisp-orange">Deliver</span>
+			</h1>
+			<p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-8">
+				Transform your ideas into powerful digital experiences. We craft custom websites and applications that not only look exceptional but drive real business growth.
 			</p>
-		</div>
-		
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-			<div class="bg-white p-8 rounded-lg shadow-md">
-				<h3 class="text-xl font-semibold text-crisp-green mb-4">Custom Web Development</h3>
-				<p class="text-gray-600">Tailored solutions built with modern technologies to meet your unique business needs.</p>
-			</div>
-			<div class="bg-white p-8 rounded-lg shadow-md">
-				<h3 class="text-xl font-semibold text-crisp-green mb-4">Responsive Design</h3>
-				<p class="text-gray-600">Mobile-first approach ensuring your website looks perfect on all devices.</p>
-			</div>
-			<div class="bg-white p-8 rounded-lg shadow-md">
-				<h3 class="text-xl font-semibold text-crisp-green mb-4">Performance Optimization</h3>
-				<p class="text-gray-600">Lightning-fast loading speeds and excellent user experience guaranteed.</p>
+			<div class="flex flex-col sm:flex-row gap-4 justify-center">
+				<a href="/contact" class="bg-crisp-orange hover:bg-crisp-orange/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200">
+					Start Your Project
+				</a>
+				<a href="/services" class="bg-white border-2 border-crisp-green text-crisp-green hover:bg-crisp-green hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200">
+					View Our Services
+				</a>
 			</div>
 		</div>
-		
-		<div class="text-center">
-			<a href="/contact" class="bg-crisp-orange hover:bg-crisp-orange/90 text-white px-8 py-3 rounded-lg font-medium text-lg transition-colors duration-200">
-				Start Your Project
-			</a>
+	</div>
+
+	<!-- Features Section -->
+	<FeaturesSection client:load />
+
+	<!-- Services Preview -->
+	<ServicesPreview client:load />
+
+	<!-- Stats Section -->
+	<div class="py-16 bg-crisp-green text-white">
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+			<div>
+				<div class="text-4xl md:text-5xl font-bold mb-2">5+</div>
+				<div class="text-xl opacity-90">Years Experience</div>
+			</div>
+			<div>
+				<div class="text-4xl md:text-5xl font-bold mb-2">100%</div>
+				<div class="text-xl opacity-90">Client Satisfaction</div>
+			</div>
+			<div>
+				<div class="text-4xl md:text-5xl font-bold mb-2">24h</div>
+				<div class="text-xl opacity-90">Response Time</div>
+			</div>
 		</div>
+	</div>
+
+	<!-- Final CTA -->
+	<div class="py-16 text-center">
+		<h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-4">Ready to Transform Your Digital Presence?</h2>
+		<p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+			Let's discuss your project and create something amazing together. Get in touch today for a free consultation.
+		</p>
+		<a href="/contact" class="bg-crisp-orange hover:bg-crisp-orange/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200">
+			Get Started Today
+		</a>
 	</div>
 </Layout>
