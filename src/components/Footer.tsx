@@ -1,4 +1,5 @@
 import React from "react";
+import { HiMail, HiArrowUp } from "react-icons/hi";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -38,9 +39,7 @@ const Footer = () => {
             </p>
             <div className="space-y-2">
               <div className="flex items-center text-sm text-gray-400">
-                <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-                </svg>
+                <HiMail className="w-4 h-4 mr-2" />
                 <a href="mailto:hello@crispdigital.co">hello@crispdigital.co</a>
               </div>
             </div>
@@ -151,9 +150,7 @@ const Footer = () => {
         className="fixed bottom-8 right-8 bg-crisp-green hover:bg-crisp-green/90 text-white p-3 rounded-full shadow-lg transition-colors duration-200 z-40 cursor-pointer"
         aria-label="Back to top"
       >
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
-        </svg>
+        <HiArrowUp className="w-5 h-5" />
       </button>
     </footer>
   );
