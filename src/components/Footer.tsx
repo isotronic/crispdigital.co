@@ -30,38 +30,27 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-4">
-              <img className="h-8 w-auto" src="/src/assets/crispdigital-logo-small.png" alt="crispdigital" />
-              <span className="ml-2 text-xl font-bold text-crisp-green">crispdigital</span>
+              <img className="h-8 w-auto" src="/src/assets/crispdigital-variation.png" alt="crispdigital" />
             </div>
             <p className="text-gray-400 text-sm mb-4">
-              Your trusted partner for modern web development solutions. We create stunning, high-performance websites
-              that drive results.
+              Your trusted partner for modern web and mobile development solutions. We create stunning, high-performance
+              websites and apps that drive results.
             </p>
             <div className="space-y-2">
               <div className="flex items-center text-sm text-gray-400">
                 <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                </svg>
-                123 Digital Avenue, Tech City, TC 12345
-              </div>
-              <div className="flex items-center text-sm text-gray-400">
-                <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
-                </svg>
-                +1 (555) 123-4567
-              </div>
-              <div className="flex items-center text-sm text-gray-400">
-                <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                 </svg>
-                hello@crispdigital.co
+                <a href="mailto:hello@crispdigital.co">hello@crispdigital.co</a>
               </div>
             </div>
           </div>
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-crisp-green">Services</h3>
+            <h3 className="text-lg font-semibold mb-4" style={{ color: "#cc3f0c" }}>
+              Services
+            </h3>
             <ul className="space-y-2">
               {services.map((service) => (
                 <li key={service.name}>
@@ -78,7 +67,9 @@ const Footer = () => {
 
           {/* Company */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-crisp-green">Company</h3>
+            <h3 className="text-lg font-semibold mb-4" style={{ color: "#cc3f0c" }}>
+              Company
+            </h3>
             <ul className="space-y-2">
               {company.map((item) => (
                 <li key={item.name}>
@@ -95,7 +86,9 @@ const Footer = () => {
 
           {/* Resources */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-crisp-green">Resources</h3>
+            <h3 className="text-lg font-semibold mb-4" style={{ color: "#cc3f0c" }}>
+              Resources
+            </h3>
             <ul className="space-y-2">
               {resources.map((item) => (
                 <li key={item.name}>
@@ -140,7 +133,7 @@ const Footer = () => {
       {/* Bottom Footer */}
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-center items-center">
             <div className="flex items-center space-x-4 mb-4 md:mb-0">
               <p className="text-gray-400 text-sm">© {currentYear} crispdigital. All rights reserved.</p>
               <div className="flex items-center space-x-1">
@@ -155,7 +148,7 @@ const Footer = () => {
       {/* Back to Top Button */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="fixed bottom-8 right-8 bg-crisp-green hover:bg-crisp-green/90 text-white p-3 rounded-full shadow-lg transition-colors duration-200 z-40"
+        className="fixed bottom-8 right-8 bg-crisp-green hover:bg-crisp-green/90 text-white p-3 rounded-full shadow-lg transition-colors duration-200 z-40 cursor-pointer"
         aria-label="Back to top"
       >
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
