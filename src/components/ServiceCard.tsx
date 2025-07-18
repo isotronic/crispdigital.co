@@ -12,15 +12,15 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ type, title, description, fea
   const getIcon = () => {
     switch (type) {
       case "web-development":
-        return <FaStar className="w-8 h-8 mr-3" style={{ color: "#cc3f0c" }} />;
+        return <FaStar className="w-8 h-8 mr-3 text-crisp-orange" />;
       case "web-design":
-        return <FaPalette className="w-8 h-8 mr-3" style={{ color: "#cc3f0c" }} />;
+        return <FaPalette className="w-8 h-8 mr-3 text-crisp-orange" />;
       case "mobile-app":
-        return <FaMobileAlt className="w-8 h-8 mr-3" style={{ color: "#cc3f0c" }} />;
+        return <FaMobileAlt className="w-8 h-8 mr-3 text-crisp-orange" />;
       case "maintenance":
-        return <FaTools className="w-8 h-8 mr-3" style={{ color: "#cc3f0c" }} />;
+        return <FaTools className="w-8 h-8 mr-3 text-crisp-orange" />;
       default:
-        return <FaStar className="w-8 h-8 mr-3" style={{ color: "#cc3f0c" }} />;
+        return <FaStar className="w-8 h-8 mr-3 text-crisp-orange" />;
     }
   };
 
@@ -28,9 +28,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ type, title, description, fea
     <div className="bg-white p-8 rounded-lg shadow-lg">
       <div className="flex items-center mb-6">
         {getIcon()}
-        <h2 className="text-2xl font-bold" style={{ color: "#33673b" }}>
-          {title}
-        </h2>
+        <h2 className="text-2xl font-bold text-crisp-green">{title}</h2>
       </div>
       <p className="text-gray-600 mb-6">{description}</p>
       <div className="mb-6">
@@ -38,9 +36,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ type, title, description, fea
         <ul className="space-y-2 text-gray-600">
           {features.map((feature, index) => (
             <li key={index} className="flex items-start">
-              <span className="mr-2" style={{ color: "#cc3f0c" }}>
-                •
-              </span>
+              <span className="mr-2 text-crisp-orange">•</span>
               <span>{feature}</span>
             </li>
           ))}
@@ -48,14 +44,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ type, title, description, fea
       </div>
       <a
         href="/contact"
-        className="inline-block px-6 py-3 rounded-lg font-medium transition-colors duration-200"
-        style={{ backgroundColor: "#cc3f0c", color: "white" }}
-        onMouseOver={(e) => {
-          e.currentTarget.style.backgroundColor = "#a33409";
-        }}
-        onMouseOut={(e) => {
-          e.currentTarget.style.backgroundColor = "#cc3f0c";
-        }}
+        className="inline-block px-6 py-3 rounded-lg font-medium transition-colors duration-200 bg-crisp-orange text-white hover:bg-crisp-orange/90"
       >
         Get Started
       </a>

@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 
-const Header = () => {
+interface HeaderProps {
+  currentPath?: string;
+}
+
+const Header: React.FC<HeaderProps> = ({ currentPath = "/" }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -15,6 +19,12 @@ const Header = () => {
     { name: "Portfolio", href: "/portfolio" },
     { name: "Contact", href: "/contact" },
   ];
+
+  const isActivePage = (href: string) => {
+    if (href === "/" && currentPath === "/") return true;
+    if (href !== "/" && currentPath.startsWith(href)) return true;
+    return false;
+  };
 
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50">
@@ -43,7 +53,11 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-crisp-green px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+                  className={`px-3 py-2 rounded-md text-base transition-colors duration-200 ${
+                    isActivePage(item.href)
+                      ? "text-crisp-green font-bold"
+                      : "text-gray-700 hover:text-crisp-green font-normal"
+                  }`}
                 >
                   {item.name}
                 </a>
@@ -81,7 +95,11 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-crisp-green block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+                  className={`block px-3 py-2 rounded-md text-lg transition-colors duration-200 ${
+                    isActivePage(item.href)
+                      ? "text-crisp-green font-bold"
+                      : "text-gray-700 hover:text-crisp-green font-normal"
+                  }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}

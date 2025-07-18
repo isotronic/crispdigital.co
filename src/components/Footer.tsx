@@ -47,9 +47,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4" style={{ color: "#cc3f0c" }}>
-              Services
-            </h3>
+            <h3 className="text-lg font-semibold mb-4 text-crisp-orange">Services</h3>
             <ul className="space-y-2">
               {services.map((service) => (
                 <li key={service.name}>
@@ -66,9 +64,7 @@ const Footer = () => {
 
           {/* Company */}
           <div>
-            <h3 className="text-lg font-semibold mb-4" style={{ color: "#cc3f0c" }}>
-              Company
-            </h3>
+            <h3 className="text-lg font-semibold mb-4 text-crisp-orange">Company</h3>
             <ul className="space-y-2">
               {company.map((item) => (
                 <li key={item.name}>
@@ -85,9 +81,7 @@ const Footer = () => {
 
           {/* Resources */}
           <div>
-            <h3 className="text-lg font-semibold mb-4" style={{ color: "#cc3f0c" }}>
-              Resources
-            </h3>
+            <h3 className="text-lg font-semibold mb-4 text-crisp-orange">Resources</h3>
             <ul className="space-y-2">
               {resources.map((item) => (
                 <li key={item.name}>
