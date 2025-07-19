@@ -19,8 +19,8 @@ const FeaturesSection: React.FC = () => {
             </div>
             <h3 className="text-xl font-semibold text-crisp-green mb-4">Custom Development</h3>
             <p className="text-gray-600">
-              Tailored solutions built with modern technologies like React, Node.js, and cloud infrastructure to meet
-              your unique business needs.
+              Tailored solutions built with modern technologies like Astro,React, Node.js, and cloud infrastructure to
+              meet your unique business needs.
             </p>
           </div>
           <div className="text-center p-8 rounded-lg hover:shadow-lg transition-shadow duration-200">
