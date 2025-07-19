@@ -4,50 +4,92 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="About - crispdigital">
   <!-- Hero Section -->
-  <div class="py-20 lg:py-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h1 class="text-4xl md:text-5xl font-bold text-crisp-green mb-6">
-          About <span class="text-crisp-orange">crispdigital</span>
-        </h1>
-        <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
-          Passionate about creating exceptional digital experiences that drive real business results.
-        </p>
+  <div class="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-crisp-green to-crisp-green/90">
+    {/* Background Image */}
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" 
+        alt="Team collaboration and innovation"
+        class="w-full h-full object-cover opacity-20"
+      />
+    </div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Hero Content -->
+        <div class="text-center lg:text-left text-white">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            About <span class="text-crisp-orange">crispdigital</span>
+          </h1>
+          <p class="text-xl md:text-2xl opacity-90 mb-8">
+            Passionate about creating exceptional digital experiences that drive real business results.
+          </p>
+          <div class="flex justify-center lg:justify-start">
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+              <p class="text-lg font-medium">🌟 Building digital excellence since 2019</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Hero Image -->
+        <div class="relative">
+          <div class="relative z-10">
+            <img 
+              src="https://images.unsplash.com/photo-1553028826-f4804a6dba3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+              alt="Modern workspace and team collaboration"
+              class="rounded-2xl shadow-2xl"
+            />
+          </div>
+          <!-- Decorative elements -->
+          <div class="absolute -top-6 -right-6 w-24 h-24 bg-crisp-orange/20 rounded-2xl -z-10"></div>
+          <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-white/20 rounded-2xl -z-10"></div>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- Mission & Vision Section -->
-  <div class="py-16 bg-white">
+  <div class="py-20 bg-gradient-to-b from-gray-50 to-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-4">Our Foundation</h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          The mission and vision that guide everything we do.
+        </p>
+      </div>
+      
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
-        <div>
-          <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Our Mission</h2>
-          <p class="text-xl text-gray-600 mb-8">
-            To empower businesses with cutting-edge digital solutions that drive growth, enhance user experiences, 
-            and create lasting competitive advantages in the digital marketplace.
-          </p>
-          <div class="bg-gray-100 p-6 rounded-2xl">
-            <div class="text-4xl text-crisp-orange mb-4">🚀</div>
-            <h3 class="text-lg font-bold text-crisp-green mb-2">Transforming Ideas into Impact</h3>
-            <p class="text-gray-600">
-              Every project is an opportunity to turn your vision into a powerful digital presence that delivers measurable results.
+        <div class="relative">
+          <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 h-full">
+            <div class="text-5xl text-crisp-orange mb-6">🚀</div>
+            <h3 class="text-2xl md:text-3xl font-bold text-crisp-green mb-6">Our Mission</h3>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+              To empower businesses with cutting-edge digital solutions that drive growth, enhance user experiences, 
+              and create lasting competitive advantages in the digital marketplace.
             </p>
+            <div class="bg-gradient-to-r from-crisp-orange/5 to-crisp-green/5 p-6 rounded-2xl border-l-4 border-crisp-orange">
+              <h4 class="text-lg font-bold text-crisp-green mb-2">Transforming Ideas into Impact</h4>
+              <p class="text-gray-600">
+                Every project is an opportunity to turn your vision into a powerful digital presence that delivers measurable results.
+              </p>
+            </div>
           </div>
         </div>
         
-        <div>
-          <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Our Vision</h2>
-          <p class="text-xl text-gray-600 mb-8">
-            To be the trusted digital partner that businesses turn to when they want to not just compete, 
-            but lead in their industry through exceptional web and mobile experiences.
-          </p>
-          <div class="bg-gray-100 p-6 rounded-2xl">
-            <div class="text-4xl text-crisp-green mb-4">🎯</div>
-            <h3 class="text-lg font-bold text-crisp-green mb-2">Excellence in Every Detail</h3>
-            <p class="text-gray-600">
-              We're committed to delivering solutions that exceed expectations and drive real business growth.
+        <div class="relative">
+          <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 h-full">
+            <div class="text-5xl text-crisp-green mb-6">🎯</div>
+            <h3 class="text-2xl md:text-3xl font-bold text-crisp-green mb-6">Our Vision</h3>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+              To be the trusted digital partner that businesses turn to when they want to not just compete, 
+              but lead in their industry through exceptional web and mobile experiences.
             </p>
+            <div class="bg-gradient-to-r from-crisp-green/5 to-crisp-orange/5 p-6 rounded-2xl border-l-4 border-crisp-green">
+              <h4 class="text-lg font-bold text-crisp-green mb-2">Excellence in Every Detail</h4>
+              <p class="text-gray-600">
+                We're committed to delivering solutions that exceed expectations and drive real business growth.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -55,8 +97,17 @@ import Layout from '../layouts/Layout.astro';
   </div>
 
   <!-- Values Section -->
-  <div class="py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="relative py-20 overflow-hidden">
+    {/* Background Image */}
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+        alt="Professional team working together"
+        class="w-full h-full object-cover opacity-5"
+      />
+    </div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-4">What Drives Us</h2>
         <p class="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -65,28 +116,34 @@ import Layout from '../layouts/Layout.astro';
       </div>
       
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="text-center p-8">
-          <div class="text-4xl text-crisp-orange mb-6">🎯</div>
+        <div class="bg-white/80 backdrop-blur-sm text-center p-8 rounded-2xl shadow-lg border border-white/50">
+          <div class="bg-gradient-to-br from-crisp-orange to-crisp-orange/80 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <div class="text-3xl text-white">🎯</div>
+          </div>
           <h3 class="text-xl font-bold text-crisp-green mb-4">Results-Focused</h3>
-          <p class="text-gray-600">
+          <p class="text-gray-600 leading-relaxed">
             Every line of code, every design decision, and every feature is crafted with your business goals in mind. 
             We don't just build websites—we build solutions that drive results.
           </p>
         </div>
         
-        <div class="text-center p-8">
-          <div class="text-4xl text-crisp-orange mb-6">🤝</div>
+        <div class="bg-white/80 backdrop-blur-sm text-center p-8 rounded-2xl shadow-lg border border-white/50">
+          <div class="bg-gradient-to-br from-crisp-orange to-crisp-orange/80 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <div class="text-3xl text-white">🤝</div>
+          </div>
           <h3 class="text-xl font-bold text-crisp-green mb-4">Collaborative Approach</h3>
-          <p class="text-gray-600">
+          <p class="text-gray-600 leading-relaxed">
             Your project is a partnership. We believe in transparent communication, regular updates, and working 
             together to ensure your vision becomes reality.
           </p>
         </div>
         
-        <div class="text-center p-8">
-          <div class="text-4xl text-crisp-orange mb-6">⚡</div>
+        <div class="bg-white/80 backdrop-blur-sm text-center p-8 rounded-2xl shadow-lg border border-white/50">
+          <div class="bg-gradient-to-br from-crisp-orange to-crisp-orange/80 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <div class="text-3xl text-white">⚡</div>
+          </div>
           <h3 class="text-xl font-bold text-crisp-green mb-4">Quality & Performance</h3>
-          <p class="text-gray-600">
+          <p class="text-gray-600 leading-relaxed">
             We're committed to delivering high-quality solutions that not only look great but perform exceptionally. 
             Fast, secure, and scalable—that's the crispdigital standard.
           </p>
@@ -196,19 +253,32 @@ import Layout from '../layouts/Layout.astro';
   </div>
 
   <!-- CTA Section -->
-  <div class="py-16 bg-crisp-green text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Work Together?</h2>
-      <p class="text-xl opacity-90 max-w-2xl mx-auto mb-8">
-        We'd love to hear about your project and discuss how we can bring your digital vision to life.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/contact" class="bg-crisp-orange hover:bg-crisp-orange/90 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200">
-          Get In Touch
-        </a>
-        <a href="/services" class="bg-white border-2 border-white text-crisp-green hover:bg-white/10 hover:text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200">
-          View Services
-        </a>
+  <div class="relative py-20 overflow-hidden">
+    {/* Background Image */}
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" 
+        alt="Professional handshake and partnership"
+        class="w-full h-full object-cover object-center"
+      />
+      <div class="absolute inset-0 bg-crisp-green/90"></div>
+    </div>
+    
+    <div class="relative z-10 text-center text-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6">Ready to Work Together?</h2>
+        <p class="text-xl md:text-2xl opacity-90 mb-10 max-w-3xl mx-auto">
+          We'd love to hear about your project and discuss how we can bring your digital vision to life. 
+          Let's start building something amazing together.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+          <a href="/contact" class="bg-crisp-orange hover:bg-crisp-orange/90 text-white px-10 py-5 rounded-2xl font-semibold text-xl transition-colors duration-200 shadow-lg hover:shadow-xl">
+            Get In Touch
+          </a>
+          <a href="/services" class="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-crisp-green px-10 py-5 rounded-2xl font-semibold text-xl transition-colors duration-200">
+            View Services
+          </a>
+        </div>
       </div>
     </div>
   </div>
