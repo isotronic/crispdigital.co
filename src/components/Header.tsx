@@ -69,7 +69,7 @@ const Header: React.FC<HeaderProps> = ({ currentPath = "/" }) => {
           <div className="hidden md:block">
             <a
               href="/contact"
-              className="bg-crisp-orange hover:bg-crisp-orange/90 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+              className="bg-crisp-orange hover:bg-crisp-orange/90 text-white px-4 py-2 rounded-2xl text-sm font-medium transition-colors duration-200"
             >
               Get Started
             </a>
@@ -107,7 +107,7 @@ const Header: React.FC<HeaderProps> = ({ currentPath = "/" }) => {
               ))}
               <a
                 href="/contact"
-                className="bg-crisp-orange hover:bg-crisp-orange/90 text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 mt-4"
+                className="bg-crisp-orange hover:bg-crisp-orange/90 text-white inline-block px-4 py-2 rounded-2xl text-base font-medium transition-colors duration-200 mt-4"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Get Started

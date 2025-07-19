@@ -27,7 +27,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ type, title, description, fea
   };
 
   return (
-    <div className="bg-white p-8 rounded-lg shadow-lg">
+    <div className="bg-white p-8 rounded-2xl shadow-lg">
       <div className="flex items-center mb-6">
         {getIcon()}
         <h2 className="text-2xl font-bold text-crisp-green">{title}</h2>
@@ -46,7 +46,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ type, title, description, fea
       </div>
       <a
         href="/contact"
-        className="inline-block px-6 py-3 rounded-lg font-medium transition-colors duration-200 bg-crisp-orange text-white hover:bg-crisp-orange/90"
+        className="inline-block px-6 py-3 rounded-2xl font-medium transition-colors duration-200 bg-crisp-orange text-white hover:bg-crisp-orange/90"
       >
         Get Started
       </a>

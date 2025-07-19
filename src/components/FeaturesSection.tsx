@@ -13,7 +13,7 @@ const FeaturesSection: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          <div className="text-center p-8 rounded-lg hover:shadow-lg transition-shadow duration-200">
+          <div className="text-center p-8 rounded-2xl hover:shadow-lg transition-shadow duration-200">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-crisp-green/10 rounded-full mb-6">
               <FaCode className="w-8 h-8 text-crisp-green" />
             </div>
@@ -23,7 +23,7 @@ const FeaturesSection: React.FC = () => {
               meet your unique business needs.
             </p>
           </div>
-          <div className="text-center p-8 rounded-lg hover:shadow-lg transition-shadow duration-200">
+          <div className="text-center p-8 rounded-2xl hover:shadow-lg transition-shadow duration-200">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-crisp-orange/10 rounded-full mb-6">
               <FaPalette className="w-8 h-8 text-crisp-orange" />
             </div>
@@ -33,7 +33,7 @@ const FeaturesSection: React.FC = () => {
               across all devices.
             </p>
           </div>
-          <div className="text-center p-8 rounded-lg hover:shadow-lg transition-shadow duration-200">
+          <div className="text-center p-8 rounded-2xl hover:shadow-lg transition-shadow duration-200">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-crisp-green/10 rounded-full mb-6">
               <FaRocket className="w-8 h-8 text-crisp-green" />
             </div>
