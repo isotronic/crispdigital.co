@@ -6,22 +6,49 @@ import ServicesPreview from '../components/ServicesPreview.tsx';
 
 <Layout>
 	<!-- Hero Section -->
-	<div class="py-20 lg:py-24">
-		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-			<div class="text-center mb-16">
-				<h1 class="text-4xl md:text-6xl font-bold text-crisp-green mb-6">
-					Digital Solutions That <span class="text-crisp-orange">Deliver</span>
-				</h1>
-				<p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-8">
-					Transform your ideas into powerful digital experiences. We craft custom websites and applications that not only look exceptional but drive real business growth.
-				</p>
-				<div class="flex flex-col sm:flex-row gap-4 justify-center">
-					<a href="/contact" class="bg-crisp-orange hover:bg-crisp-orange/90 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200">
-						Start Your Project
-					</a>
-					<a href="/services" class="bg-white border-2 border-crisp-green text-crisp-green hover:bg-crisp-green hover:text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200">
-						View Our Services
-					</a>
+	<div class="relative py-20 lg:py-32 overflow-hidden">
+		<!-- Background Image -->
+		<div class="absolute inset-0 z-0">
+			<img 
+				src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+				alt="Modern workspace with laptop and design tools"
+				class="w-full h-full object-cover opacity-10"
+			/>
+			<div class="absolute inset-0 bg-gradient-to-r from-white/95 to-white/90"></div>
+		</div>
+		
+		<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+				<!-- Hero Content -->
+				<div class="text-center lg:text-left">
+					<h1 class="text-4xl md:text-6xl font-bold text-crisp-green mb-6">
+						Digital Solutions That <span class="text-crisp-orange">Deliver</span>
+					</h1>
+					<p class="text-xl md:text-2xl text-gray-600 mb-8">
+						Transform your ideas into powerful digital experiences. We craft custom websites and applications that not only look exceptional but drive real business growth.
+					</p>
+					<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+						<a href="/contact" class="bg-crisp-orange hover:bg-crisp-orange/90 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
+							Start Your Project
+						</a>
+						<a href="/services" class="bg-white border-2 border-crisp-green text-crisp-green hover:bg-crisp-green hover:text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200">
+							View Our Services
+						</a>
+					</div>
+				</div>
+				
+				<!-- Hero Image -->
+				<div class="relative">
+					<div class="relative z-10">
+						<img 
+							src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80" 
+							alt="Analytics dashboard showing business growth"
+							class="rounded-2xl shadow-2xl"
+						/>
+					</div>
+					<!-- Decorative elements -->
+					<div class="absolute -top-6 -right-6 w-24 h-24 bg-crisp-orange/20 rounded-2xl -z-10"></div>
+					<div class="absolute -bottom-6 -left-6 w-32 h-32 bg-crisp-green/20 rounded-2xl -z-10"></div>
 				</div>
 			</div>
 		</div>
@@ -34,35 +61,78 @@ import ServicesPreview from '../components/ServicesPreview.tsx';
 	<ServicesPreview client:load />
 
 	<!-- Stats Section -->
-	<div class="py-16 bg-crisp-green text-white">
-		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-				<div>
+	<div class="relative py-20 bg-crisp-green text-white overflow-hidden">
+		<!-- Background Pattern -->
+		<div class="absolute inset-0 opacity-10">
+			<img 
+				src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+				alt="Data visualization background"
+				class="w-full h-full object-cover"
+			/>
+		</div>
+		
+		<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="text-center mb-16">
+				<h2 class="text-3xl md:text-4xl font-bold mb-4">Proven Track Record</h2>
+				<p class="text-xl opacity-90 max-w-2xl mx-auto">
+					Our commitment to excellence is reflected in our results and client satisfaction.
+				</p>
+			</div>
+			
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<div class="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
 					<div class="text-4xl md:text-5xl font-bold mb-2">5+</div>
 					<div class="text-xl opacity-90">Years Experience</div>
+					<div class="text-sm opacity-75 mt-2">Building digital solutions</div>
 				</div>
-				<div>
+				<div class="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
 					<div class="text-4xl md:text-5xl font-bold mb-2">100%</div>
 					<div class="text-xl opacity-90">Client Satisfaction</div>
+					<div class="text-sm opacity-75 mt-2">Happy clients, every time</div>
 				</div>
-				<div>
+				<div class="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
 					<div class="text-4xl md:text-5xl font-bold mb-2">24h</div>
 					<div class="text-xl opacity-90">Response Time</div>
+					<div class="text-sm opacity-75 mt-2">Quick communication</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<!-- Final CTA -->
-	<div class="py-16 text-center">
+	<div class="py-20 bg-gradient-to-br from-gray-50 to-white">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-			<h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-4">Ready to Transform Your Digital Presence?</h2>
-			<p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-				Let's discuss your project and create something amazing together. Get in touch today for a free consultation.
-			</p>
-			<a href="/contact" class="bg-crisp-orange hover:bg-crisp-orange/90 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200">
-				Get Started Today
-			</a>
+			<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+				<!-- CTA Content -->
+				<div class="text-center lg:text-left">
+					<h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Ready to Transform Your Digital Presence?</h2>
+					<p class="text-xl text-gray-600 mb-8">
+						Let's discuss your project and create something amazing together. Get in touch today for a free consultation and discover how we can help your business grow.
+					</p>
+					<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+						<a href="/contact" class="bg-crisp-orange hover:bg-crisp-orange/90 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
+							Get Started Today
+						</a>
+						<a href="/portfolio" class="bg-white border-2 border-crisp-green text-crisp-green hover:bg-crisp-green hover:text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200">
+							View Our Work
+						</a>
+					</div>
+				</div>
+				
+				<!-- CTA Image -->
+				<div class="relative">
+					<div class="relative z-10">
+						<img 
+							src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" 
+							alt="Team collaboration and planning session"
+							class="rounded-2xl shadow-xl"
+						/>
+					</div>
+					<!-- Decorative elements -->
+					<div class="absolute -top-4 -left-4 w-20 h-20 bg-crisp-orange/20 rounded-2xl -z-10"></div>
+					<div class="absolute -bottom-4 -right-4 w-24 h-24 bg-crisp-green/20 rounded-2xl -z-10"></div>
+				</div>
+			</div>
 		</div>
 	</div>
 </Layout>
