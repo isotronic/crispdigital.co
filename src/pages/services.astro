@@ -1,9 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ServiceCard from '../components/ServiceCard.tsx';
+import TechStackCarousel from '../components/TechStackCarousel.tsx';
 ---
 
-<Layout>
+<Layout title="Services - crispdigital">
   {/* Hero Section */}
   <div class="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-crisp-green to-crisp-green/90">
     {/* Background Image */}
@@ -15,49 +16,50 @@ import ServiceCard from '../components/ServiceCard.tsx';
       />
     </div>
     
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-      <h1 class="text-4xl md:text-6xl font-bold mb-6">Our Services</h1>
-      <p class="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto mb-8">
-        We offer comprehensive web and mobile development solutions to help your business thrive in the digital world.
-      </p>
-      <div class="flex justify-center">
-        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-          <p class="text-lg font-medium">🚀 Ready to transform your digital presence?</p>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        {/* Hero Content */}
+        <div class="text-center lg:text-left text-white">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">Our Services</h1>
+          <p class="text-xl md:text-2xl opacity-90 mb-8">
+            We offer comprehensive web and mobile development solutions to help your business thrive in the digital world.
+          </p>
+          <div class="flex justify-center lg:justify-start">
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+              <p class="text-lg font-medium">🚀 Ready to transform your digital presence?</p>
+            </div>
+          </div>
+        </div>
+        
+        {/* Hero Image */}
+        <div class="relative">
+          <div class="relative z-10">
+            <img 
+              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+              alt="Programming code with multiple technologies and frameworks"
+              class="rounded-2xl shadow-2xl"
+            />
+          </div>
+          {/* Decorative elements */}
+          <div class="absolute -top-6 -right-6 w-24 h-24 bg-crisp-orange/20 rounded-2xl -z-10"></div>
+          <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-white/20 rounded-2xl -z-10"></div>
         </div>
       </div>
     </div>
   </div>
 
-  {/* Services Introduction */}
+  {/* Tech Stack Carousel */}
   <div class="py-16 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">What We Do Best</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Technologies We Master</h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          From concept to launch, we provide end-to-end digital solutions that drive results. 
-          Our expertise spans across modern technologies and proven methodologies.
+          We work with cutting-edge technologies and proven frameworks to deliver exceptional results. 
+          Our expertise spans across the full development stack.
         </p>
       </div>
       
-      {/* Featured Stats */}
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
-        <div class="text-center bg-white p-6 rounded-2xl shadow-md">
-          <div class="text-3xl font-bold text-crisp-orange mb-2">50+</div>
-          <div class="text-gray-600">Projects Delivered</div>
-        </div>
-        <div class="text-center bg-white p-6 rounded-2xl shadow-md">
-          <div class="text-3xl font-bold text-crisp-orange mb-2">5+</div>
-          <div class="text-gray-600">Technologies Mastered</div>
-        </div>
-        <div class="text-center bg-white p-6 rounded-2xl shadow-md">
-          <div class="text-3xl font-bold text-crisp-orange mb-2">24/7</div>
-          <div class="text-gray-600">Support Available</div>
-        </div>
-        <div class="text-center bg-white p-6 rounded-2xl shadow-md">
-          <div class="text-3xl font-bold text-crisp-orange mb-2">100%</div>
-          <div class="text-gray-600">Client Satisfaction</div>
-        </div>
-      </div>
+      <TechStackCarousel client:load />
     </div>
   </div>
 
