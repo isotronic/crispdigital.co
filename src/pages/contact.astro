@@ -1,0 +1,327 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact - crispdigital">
+  <!-- Hero Section -->
+  <div class="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-crisp-green to-crisp-green/90">
+    {/* Background Image */}
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" 
+        alt="Professional communication and connectivity"
+        class="w-full h-full object-cover opacity-20"
+      />
+    </div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Hero Content -->
+        <div class="text-center lg:text-left text-white">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            Let's Build Something <span class="text-crisp-orange">Amazing</span>
+          </h1>
+          <p class="text-xl md:text-2xl opacity-90 mb-8">
+            Ready to transform your digital presence? We're here to help bring your vision to life with cutting-edge solutions.
+          </p>
+          <div class="flex justify-center lg:justify-start">
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+              <p class="text-lg font-medium">📞 Free consultation • Quick response • Expert guidance</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Hero Image -->
+        <div class="relative">
+          <div class="relative z-10">
+            <img 
+              src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80" 
+              alt="Professional working on laptop with coffee"
+              class="rounded-2xl shadow-2xl"
+            />
+          </div>
+          <!-- Decorative elements -->
+          <div class="absolute -top-6 -right-6 w-24 h-24 bg-crisp-orange/20 rounded-2xl -z-10"></div>
+          <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-white/20 rounded-2xl -z-10"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form & Info Section -->
+  <div class="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <!-- Contact Form -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+          <div class="mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-4">Get In Touch</h2>
+            <p class="text-xl text-gray-600">
+              Tell us about your project and we'll get back to you within 24 hours.
+            </p>
+          </div>
+          
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="firstName" class="block text-sm font-semibold text-crisp-green mb-2">First Name</label>
+                <input 
+                  type="text" 
+                  id="firstName" 
+                  name="firstName" 
+                  required
+                  class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-crisp-orange focus:border-transparent transition-all duration-200"
+                  placeholder="John"
+                />
+              </div>
+              <div>
+                <label for="lastName" class="block text-sm font-semibold text-crisp-green mb-2">Last Name</label>
+                <input 
+                  type="text" 
+                  id="lastName" 
+                  name="lastName" 
+                  required
+                  class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-crisp-orange focus:border-transparent transition-all duration-200"
+                  placeholder="Doe"
+                />
+              </div>
+            </div>
+            
+            <div>
+              <label for="email" class="block text-sm font-semibold text-crisp-green mb-2">Email Address</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required
+                class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-crisp-orange focus:border-transparent transition-all duration-200"
+                placeholder="john@example.com"
+              />
+            </div>
+            
+            <div>
+              <label for="phone" class="block text-sm font-semibold text-crisp-green mb-2">Phone Number (Optional)</label>
+              <input 
+                type="tel" 
+                id="phone" 
+                name="phone"
+                class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-crisp-orange focus:border-transparent transition-all duration-200"
+                placeholder="+44 7700 900123"
+              />
+            </div>
+            
+            <div>
+              <label for="projectType" class="block text-sm font-semibold text-crisp-green mb-2">Project Type</label>
+              <select 
+                id="projectType" 
+                name="projectType" 
+                required
+                class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-crisp-orange focus:border-transparent transition-all duration-200"
+              >
+                <option value="">Select a project type</option>
+                <option value="web-development">Web Development</option>
+                <option value="web-design">Web Design</option>
+                <option value="mobile-app">React Native App</option>
+                <option value="wordpress">WordPress Development</option>
+                <option value="maintenance">Website Maintenance</option>
+                <option value="consultation">Consultation</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div>
+              <label for="budget" class="block text-sm font-semibold text-crisp-green mb-2">Project Budget</label>
+              <select 
+                id="budget" 
+                name="budget"
+                class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-crisp-orange focus:border-transparent transition-all duration-200"
+              >
+                <option value="">Select your budget range</option>
+                <option value="under-500">Under £500</option>
+                <option value="500-1000">£500 - £1,000</option>
+                <option value="1000-2000">£1,000 - £2,000</option>
+                <option value="2000-3500">£2,000 - £3,500</option>
+                <option value="3500-5000">£3,500 - £5,000</option>
+                <option value="over-5000">£5,000+</option>
+                <option value="discuss">Let's discuss</option>
+              </select>
+            </div>
+            
+            <div>
+              <label for="message" class="block text-sm font-semibold text-crisp-green mb-2">Project Details</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                rows="5" 
+                required
+                class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-crisp-orange focus:border-transparent transition-all duration-200 resize-vertical"
+                placeholder="Tell us about your project goals, timeline, and any specific requirements..."
+              ></textarea>
+            </div>
+            
+            <button 
+              type="submit"
+              class="w-full bg-crisp-orange hover:bg-crisp-orange/90 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+        
+        <!-- Contact Information -->
+        <div class="space-y-8">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Contact Information</h2>
+            <p class="text-xl text-gray-600 mb-8">
+              We're here to help you succeed. Reach out through any of these channels.
+            </p>
+          </div>
+          
+          <!-- Contact Methods -->
+          <div class="space-y-6">
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+              <div class="flex items-start space-x-4">
+                <div class="bg-gradient-to-br from-crisp-orange to-crisp-orange/80 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-crisp-green mb-2">Email</h3>
+                  <p class="text-gray-600 mb-2">Send us a message anytime</p>
+                  <a href="mailto:hello@crispdigital.co" class="text-crisp-orange hover:text-crisp-orange/80 font-semibold">hello@crispdigital.co</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+              <div class="flex items-start space-x-4">
+                <div class="bg-gradient-to-br from-crisp-green to-crisp-green/80 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-crisp-green mb-2">Response Time</h3>
+                  <p class="text-gray-600 mb-2">We typically respond within</p>
+                  <p class="text-crisp-green font-semibold">24 hours</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+              <div class="flex items-start space-x-4">
+                <div class="bg-gradient-to-br from-crisp-orange to-crisp-orange/80 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-crisp-green mb-2">Free Consultation</h3>
+                  <p class="text-gray-600 mb-2">30-minute discovery call</p>
+                  <p class="text-crisp-green font-semibold">No commitment required</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Why Choose Us -->
+          <div class="bg-gradient-to-r from-crisp-green/5 to-crisp-orange/5 p-8 rounded-2xl border-l-4 border-crisp-green">
+            <h3 class="text-2xl font-bold text-crisp-green mb-4">Why Work With Us?</h3>
+            <ul class="space-y-3 text-gray-600">
+              <li class="flex items-center space-x-3">
+                <div class="w-2 h-2 bg-crisp-orange rounded-full"></div>
+                <span>5+ years of proven experience</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <div class="w-2 h-2 bg-crisp-orange rounded-full"></div>
+                <span>100% client satisfaction rate</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <div class="w-2 h-2 bg-crisp-orange rounded-full"></div>
+                <span>Modern, scalable solutions</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <div class="w-2 h-2 bg-crisp-orange rounded-full"></div>
+                <span>Ongoing support and maintenance</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ Section -->
+  <div class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-4">Frequently Asked Questions</h2>
+        <p class="text-xl text-gray-600">
+          Quick answers to common questions about our process and services.
+        </p>
+      </div>
+      
+      <div class="space-y-6">
+        <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100">
+          <h3 class="text-lg font-bold text-crisp-green mb-3">How long does a typical project take?</h3>
+          <p class="text-gray-600">
+            Project timelines vary based on complexity. A simple website typically takes 2-4 weeks, while more complex applications can take 8-12 weeks. We'll provide a detailed timeline during our initial consultation.
+          </p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100">
+          <h3 class="text-lg font-bold text-crisp-green mb-3">Do you provide ongoing support after launch?</h3>
+          <p class="text-gray-600">
+            Yes! We offer comprehensive maintenance packages including security updates, performance monitoring, content updates, and technical support to keep your site running smoothly.
+          </p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100">
+          <h3 class="text-lg font-bold text-crisp-green mb-3">What's included in the free consultation?</h3>
+          <p class="text-gray-600">
+            Our free 30-minute consultation includes project scope discussion, technology recommendations, timeline estimation, and budget planning. No commitment required—just valuable insights for your project.
+          </p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100">
+          <h3 class="text-lg font-bold text-crisp-green mb-3">Do you work with businesses of all sizes?</h3>
+          <p class="text-gray-600">
+            Absolutely! We work with startups, small businesses, and established companies. Our solutions are tailored to your specific needs and budget, ensuring maximum value regardless of your company size.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <div class="relative py-20 overflow-hidden">
+    {/* Background Image */}
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" 
+        alt="Professional team meeting and collaboration"
+        class="w-full h-full object-cover object-center"
+      />
+      <div class="absolute inset-0 bg-crisp-green/90"></div>
+    </div>
+    
+    <div class="relative z-10 text-center text-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6">Ready to Start Your Project?</h2>
+        <p class="text-xl md:text-2xl opacity-90 mb-10 max-w-3xl mx-auto">
+          Join the businesses that trust crispdigital to deliver exceptional digital experiences. 
+          Let's discuss your vision and create something amazing together.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+          <a href="/portfolio" class="bg-crisp-orange hover:bg-crisp-orange/90 text-white px-10 py-5 rounded-2xl font-semibold text-xl transition-colors duration-200 shadow-lg hover:shadow-xl">
+            View Our Work
+          </a>
+          <a href="/services" class="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-crisp-green px-10 py-5 rounded-2xl font-semibold text-xl transition-colors duration-200">
+            Our Services
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
