@@ -8,20 +8,20 @@ const Footer = () => {
     { name: "Web Development", href: "/services/web-development" },
     { name: "Web Design", href: "/services/web-design" },
     { name: "React Native Apps", href: "/services/mobile-app-development" },
-    { name: "WordPress Development", href: "/services/wordpress" },
-    { name: "Maintenance", href: "/services/maintenance" },
+    { name: "WordPress Development", href: "/services/wordpress-development" },
+    { name: "Website Maintenance", href: "/services/website-maintenance" },
   ];
 
   const company = [
     { name: "About Us", href: "/about" },
     { name: "Portfolio", href: "/portfolio" },
-    { name: "Blog", href: "/blog" },
+    { name: "Services", href: "/services" },
   ];
 
   const resources = [
     { name: "Privacy Policy", href: "/privacy" },
     { name: "Terms of Service", href: "/terms" },
-    { name: "Sitemap", href: "/sitemap" },
+    { name: "Sitemap", href: "/sitemap.xml" },
   ];
 
   return (
