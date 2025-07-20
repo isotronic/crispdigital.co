@@ -1,0 +1,516 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Website Maintenance & Support Services - crispdigital">
+  {/* Breadcrumb Navigation */}
+  <div class="bg-gray-50 py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex text-sm text-gray-600">
+        <a href="/" class="hover:text-crisp-green transition-colors duration-200">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/services" class="hover:text-crisp-green transition-colors duration-200">Services</a>
+        <span class="mx-2">/</span>
+        <span class="text-crisp-green font-medium">Website Maintenance</span>
+      </nav>
+    </div>
+  </div>
+
+  {/* Hero Section */}
+  <div class="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-crisp-green to-crisp-green/90">
+    {/* Background Image */}
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
+        alt="Website maintenance dashboard with monitoring and analytics"
+        class="w-full h-full object-cover opacity-20"
+      />
+    </div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        {/* Hero Content */}
+        <div class="text-center lg:text-left text-white">
+          <div class="inline-block bg-crisp-orange/20 backdrop-blur-sm rounded-2xl px-4 py-2 mb-6">
+            <span class="text-sm font-semibold text-crisp-orange">🛡️ 24/7 Support & Maintenance</span>
+          </div>
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            Website <span class="text-crisp-orange">Maintenance</span>
+          </h1>
+          <p class="text-xl md:text-2xl opacity-90 mb-8">
+            Keep your digital assets secure, updated, and performing at their best. Comprehensive maintenance and support for websites, web apps, mobile apps, and WordPress sites.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/contact" class="bg-crisp-orange hover:bg-crisp-orange/90 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
+              Get Maintenance Quote
+            </a>
+            <a href="#maintenance-plans" class="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-crisp-green px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200">
+              View Plans
+            </a>
+          </div>
+        </div>
+        
+        {/* Hero Image */}
+        <div class="relative">
+          <div class="relative z-10">
+            <img 
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80" 
+              alt="Website maintenance monitoring dashboard with security analytics"
+              class="rounded-2xl shadow-2xl"
+            />
+          </div>
+          {/* Decorative elements */}
+          <div class="absolute -top-6 -right-6 w-24 h-24 bg-crisp-orange/20 rounded-2xl -z-10"></div>
+          <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-white/20 rounded-2xl -z-10"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Key Benefits Section */}
+  <div class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Why Choose Our Maintenance Services?</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Proactive maintenance keeps your digital assets running smoothly, secure from threats, and optimized for peak performance. Focus on your business while we handle the technical details.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Enhanced Security</h3>
+          <p class="text-gray-600">Regular security updates, vulnerability scanning, malware protection, and proactive threat monitoring to keep your digital assets safe from cyber threats.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Peak Performance</h3>
+          <p class="text-gray-600">Speed optimization, database maintenance, caching configuration, and performance monitoring to ensure fast loading times and smooth user experience.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Automated Backups</h3>
+          <p class="text-gray-600">Daily automated backups with multiple restore points, ensuring your data is always safe and recoverable in case of any issues or emergencies.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100-4m0 4v2m0-6V4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Regular Updates</h3>
+          <p class="text-gray-600">Core software updates, plugin maintenance, compatibility testing, and feature updates to keep your digital platforms current and functional.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 00-2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">24/7 Monitoring</h3>
+          <p class="text-gray-600">Round-the-clock uptime monitoring, instant alerting for issues, and proactive problem resolution to minimize downtime and service interruptions.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Expert Support</h3>
+          <p class="text-gray-600">Dedicated technical support team available for troubleshooting, emergency fixes, and consultation on improvements and optimizations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Maintenance Services Section */}
+  <div class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Comprehensive Maintenance Services</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          We provide specialized maintenance and support for all types of digital platforms to keep your business running smoothly online.
+        </p>
+      </div>
+      
+      <div class="space-y-8">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="p-8 lg:p-12">
+              <div class="inline-block bg-crisp-orange/10 rounded-xl px-4 py-2 mb-4">
+                <span class="text-sm font-semibold text-crisp-orange">🌐 Website Maintenance</span>
+              </div>
+              <h3 class="text-2xl md:text-3xl font-bold text-crisp-green mb-4">Website & Web App Support</h3>
+              <p class="text-gray-600 mb-6">
+                Complete maintenance services for your websites and web applications. From security updates to performance optimization, we keep your online presence running flawlessly.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Security updates and vulnerability patches
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Performance monitoring and optimization
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Content updates and feature enhancements
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  SSL certificate management
+                </li>
+              </ul>
+            </div>
+            <div class="lg:p-8">
+              <img 
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
+                alt="Website maintenance dashboard showing analytics and performance metrics"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="lg:p-8 order-2 lg:order-1">
+              <img 
+                src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
+                alt="Mobile app maintenance with code debugging and testing interface"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+            <div class="p-8 lg:p-12 order-1 lg:order-2">
+              <div class="inline-block bg-crisp-green/10 rounded-xl px-4 py-2 mb-4">
+                <span class="text-sm font-semibold text-crisp-green">📱 Mobile App Support</span>
+              </div>
+              <h3 class="text-2xl md:text-3xl font-bold text-crisp-green mb-4">Mobile App Maintenance</h3>
+              <p class="text-gray-600 mb-6">
+                Keep your mobile applications updated, secure, and performing optimally across iOS and Android platforms with our specialized app maintenance services.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  App store updates and version management
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Bug fixes and crash monitoring
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  OS compatibility updates
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Performance optimization and monitoring
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="p-8 lg:p-12">
+              <div class="inline-block bg-crisp-orange/10 rounded-xl px-4 py-2 mb-4">
+                <span class="text-sm font-semibold text-crisp-orange">⚡ WordPress Care</span>
+              </div>
+              <h3 class="text-2xl md:text-3xl font-bold text-crisp-green mb-4">WordPress Maintenance</h3>
+              <p class="text-gray-600 mb-6">
+                Specialized WordPress maintenance to keep your CMS secure, updated, and running smoothly. From core updates to plugin management and security hardening.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  WordPress core and plugin updates
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Security scanning and malware removal
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Database optimization and cleanup
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  WooCommerce store maintenance
+                </li>
+              </ul>
+            </div>
+            <div class="lg:p-8">
+              <img 
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80" 
+                alt="WordPress maintenance dashboard with security and performance monitoring"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Maintenance Plans Section */}
+  <div id="maintenance-plans" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Maintenance Plans & Pricing</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Choose the maintenance plan that fits your needs and budget. All plans include 24/7 monitoring, regular backups, and expert support.
+        </p>
+      </div>
+      
+      <div class="pt-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+          <div class="text-center mb-8 flex-shrink-0">
+            <h3 class="text-2xl font-bold text-crisp-green mb-2">Essential Care</h3>
+            <p class="text-gray-600 mb-4">Perfect for small websites and personal blogs</p>
+            <div class="text-4xl font-bold text-crisp-green mb-2">£69</div>
+            <p class="text-sm text-gray-500">per month</p>
+          </div>
+          <ul class="space-y-3 mb-8 flex-grow">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Basic security monitoring
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Weekly automated backups
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Core software updates
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Uptime monitoring
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              1 hour development time
+            </li>
+          </ul>
+          <a href="/contact" class="block w-full text-center bg-crisp-green text-white py-3 rounded-2xl font-semibold hover:bg-crisp-green/90 transition-colors duration-200 flex-shrink-0">
+            Get Started
+          </a>
+        </div>
+        
+        <div class="bg-crisp-green rounded-2xl p-8 text-white relative flex flex-col">
+          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+            <span class="bg-crisp-orange text-white px-4 py-2 rounded-full text-sm font-semibold">Most Popular</span>
+          </div>
+          <div class="text-center mb-8 flex-shrink-0">
+            <h3 class="text-2xl font-bold mb-2">Professional Care</h3>
+            <p class="text-white/90 mb-4">Ideal for business websites and growing companies</p>
+            <div class="text-4xl font-bold mb-2">£149</div>
+            <p class="text-sm text-white/70">per month</p>
+          </div>
+          <ul class="space-y-3 mb-8 flex-grow">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Advanced security & malware scanning
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Daily automated backups
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              All updates & plugin management
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Performance optimization
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              3 hours development time
+            </li>
+          </ul>
+          <a href="/contact" class="block w-full text-center bg-crisp-orange text-white py-3 rounded-2xl font-semibold hover:bg-crisp-orange/90 transition-colors duration-200 flex-shrink-0">
+            Get Started
+          </a>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+          <div class="text-center mb-8 flex-shrink-0">
+            <h3 class="text-2xl font-bold text-crisp-green mb-2">Enterprise Care</h3>
+            <p class="text-gray-600 mb-4">Complete maintenance solutions for large organizations</p>
+            <div class="text-4xl font-bold text-crisp-green mb-2">Custom Quote</div>
+            <p class="text-sm text-gray-500">Based on requirements</p>
+          </div>
+          <ul class="space-y-3 mb-8 flex-grow">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Premium security & threat protection
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Real-time backups & staging
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              White-glove update management
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Advanced performance monitoring
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              10 hours development time
+            </li>
+          </ul>
+          <a href="/contact" class="block w-full text-center bg-crisp-green text-white py-3 rounded-2xl font-semibold hover:bg-crisp-green/90 transition-colors duration-200 flex-shrink-0">
+            Contact Us
+          </a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  {/* FAQ Section */}
+  <div class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Frequently Asked Questions</h2>
+        <p class="text-xl text-gray-600">
+          Common questions about our maintenance and support services
+        </p>
+      </div>
+      
+      <div class="space-y-6">
+        <div class="bg-white rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">What's included in website maintenance?</h3>
+          <p class="text-gray-600">
+            Our maintenance services include regular security updates, performance monitoring, automated backups, uptime monitoring, and technical support. We also handle content updates and minor modifications as part of your plan.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">How quickly do you respond to issues?</h3>
+          <p class="text-gray-600">
+            Response times vary by plan: Essential Care (48 hours), Professional Care (24 hours), and Enterprise Care (immediate for critical issues). We monitor your sites 24/7 and address issues proactively.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">Do you provide emergency support?</h3>
+          <p class="text-gray-600">
+            Yes, we offer emergency support for critical issues like site downtime, security breaches, or major functionality problems. Emergency support is included in Professional and Enterprise plans, available as add-on for Essential.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">Can you maintain sites not built by you?</h3>
+          <p class="text-gray-600">
+            Absolutely! We can take over maintenance for any website, web app, mobile app, or WordPress site regardless of who built it. We'll perform an initial audit to understand your current setup.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">What happens if I need to cancel?</h3>
+          <p class="text-gray-600">
+            Our maintenance plans are month-to-month with no long-term contracts. You can cancel at any time with 30 days notice. We'll provide all necessary files and access for smooth transition.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* CTA Section */}
+  <div class="py-20 bg-crisp-green">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Secure Your Digital Assets?</h2>
+      <p class="text-xl opacity-90 mb-8">
+        Don't let maintenance issues slow down your business. Get professional support and peace of mind with our comprehensive maintenance services.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="bg-crisp-orange hover:bg-crisp-orange/90 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
+          Get Maintenance Quote
+        </a>
+        <a href="/portfolio" class="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-crisp-green px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200">
+          View Our Work
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>
