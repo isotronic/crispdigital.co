@@ -26,6 +26,23 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ type, title, description, fea
     }
   };
 
+  const getServiceUrl = () => {
+    switch (type) {
+      case "web-development":
+        return "/services/web-development";
+      case "web-design":
+        return "/services/web-design";
+      case "mobile-app":
+        return "/services/mobile-app-development";
+      case "maintenance":
+        return "/services/website-maintenance";
+      case "wordpress":
+        return "/services/wordpress-development";
+      default:
+        return "/contact";
+    }
+  };
+
   return (
     <div className="bg-white p-8 rounded-2xl shadow-lg">
       <div className="flex items-center mb-6">
@@ -44,12 +61,20 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ type, title, description, fea
           ))}
         </ul>
       </div>
-      <a
-        href="/contact"
-        className="inline-block px-6 py-3 rounded-2xl font-medium transition-colors duration-200 bg-crisp-orange text-white hover:bg-crisp-orange/90"
-      >
-        Get Started
-      </a>
+      <div className="flex flex-col sm:flex-row gap-3">
+        <a
+          href={getServiceUrl()}
+          className="inline-block px-6 py-3 rounded-2xl font-medium transition-colors duration-200 bg-crisp-green text-white hover:bg-crisp-green/90"
+        >
+          Learn More
+        </a>
+        <a
+          href="/contact"
+          className="inline-block px-6 py-3 rounded-2xl font-medium transition-colors duration-200 bg-crisp-orange text-white hover:bg-crisp-orange/90"
+        >
+          Get Started
+        </a>
+      </div>
     </div>
   );
 };
