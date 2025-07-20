@@ -1,5 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import portfolioMusclequest from '../assets/portfolio-musclequest.png';
+import portfolioJoseph from '../assets/portfolio-joseph.png';
+import astroIcon from '../assets/astro-icon-dark.svg';
 ---
 
 <Layout title="Portfolio - crispdigital">
@@ -59,7 +62,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
           <div class="relative overflow-hidden rounded-t-2xl">
             <img 
-              src="/src/assets/portfolio-musclequest.png" 
+              src={portfolioMusclequest.src} 
               alt="MuscleQuest Fitness App"
               class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-500"
             />
@@ -99,7 +102,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
           <div class="relative overflow-hidden rounded-t-2xl">
             <img 
-              src="/src/assets/portfolio-joseph.png" 
+              src={portfolioJoseph.src} 
               alt="Joseph Bouqdib Portfolio Website"
               class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-500"
             />
@@ -379,7 +382,7 @@ import Layout from '../layouts/Layout.astro';
 
         <div class="text-center group">
           <div class="bg-white p-6 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2">
-            <img src="/src/assets/astro-icon-dark.svg" alt="Astro" class="w-12 h-12 mb-3 mx-auto" />
+            <img src={astroIcon.src} alt="Astro" class="w-12 h-12 mb-3 mx-auto" />
             <h3 class="font-semibold text-crisp-green">Astro</h3>
           </div>
         </div>

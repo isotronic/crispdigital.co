@@ -1,10 +1,12 @@
 import React, { useRef, useEffect, useState } from "react";
+import astroIcon from "../assets/astro-icon-dark.svg";
+import expoLogo from "../assets/expo-logo.svg";
 
 const techStack = [
   { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", label: "React" },
   { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", label: "TypeScript" },
   { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", label: "JavaScript" },
-  { src: "/src/assets/astro-icon-dark.svg", label: "Astro" },
+  { src: astroIcon.src, label: "Astro" },
   {
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     label: "Tailwind CSS",
@@ -18,7 +20,7 @@ const techStack = [
   { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", label: "PostgreSQL" },
   { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", label: "MySQL" },
   { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", label: "React Native" },
-  { src: "/src/assets/expo-logo.svg", label: "Expo" },
+  { src: expoLogo.src, label: "Expo" },
   { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg", label: "WordPress" },
   { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", label: "Git" },
 ];

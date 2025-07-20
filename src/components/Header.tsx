@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { HiMenu, HiX, HiChevronDown } from "react-icons/hi";
+import crispdigitalVariation from "../assets/crispdigital-variation.png";
+import crispdigitalLogoSmall from "../assets/crispdigital-logo-small.png";
 
 interface HeaderProps {
   currentPath?: string;
@@ -64,17 +66,9 @@ const Header: React.FC<HeaderProps> = ({ currentPath = "/" }) => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             {/* Large logo for desktop */}
-            <img
-              className="hidden md:block h-8 w-auto"
-              src="/src/assets/crispdigital-variation.png"
-              alt="crispdigital"
-            />
+            <img className="hidden md:block h-8 w-auto" src={crispdigitalVariation.src} alt="crispdigital" />
             {/* Small logo for mobile */}
-            <img
-              className="block md:hidden h-8 w-auto"
-              src="/src/assets/crispdigital-logo-small.png"
-              alt="crispdigital"
-            />
+            <img className="block md:hidden h-8 w-auto" src={crispdigitalLogoSmall.src} alt="crispdigital" />
           </div>
 
           {/* Desktop Navigation */}

@@ -1,5 +1,6 @@
 import React from "react";
 import { HiMail, HiArrowUp } from "react-icons/hi";
+import crispdigitalVariation from "../assets/crispdigital-variation.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -32,7 +33,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-4">
-              <img className="h-8 w-auto" src="/src/assets/crispdigital-variation.png" alt="crispdigital" />
+              <img className="h-8 w-auto" src={crispdigitalVariation.src} alt="crispdigital" />
             </div>
             <p className="text-gray-400 text-sm mb-4">
               Your trusted partner for modern web and mobile development solutions. We create stunning, high-performance
