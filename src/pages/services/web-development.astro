@@ -1,0 +1,604 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Web Development Services - crispdigital">
+  {/* Breadcrumb Navigation */}
+  <div class="bg-gray-50 py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex text-sm text-gray-600">
+        <a href="/" class="hover:text-crisp-green transition-colors duration-200">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/services" class="hover:text-crisp-green transition-colors duration-200">Services</a>
+        <span class="mx-2">/</span>
+        <span class="text-crisp-green font-medium">Web Development</span>
+      </nav>
+    </div>
+  </div>
+
+  {/* Hero Section */}
+  <div class="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-crisp-green to-crisp-green/90">
+    {/* Background Image */}
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" 
+        alt="Web development code on multiple screens"
+        class="w-full h-full object-cover opacity-20"
+      />
+    </div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        {/* Hero Content */}
+        <div class="text-center lg:text-left text-white">
+          <div class="inline-block bg-crisp-orange/20 backdrop-blur-sm rounded-2xl px-4 py-2 mb-6">
+            <span class="text-sm font-semibold text-crisp-orange">⚡ Premium Web Development</span>
+          </div>
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            Custom Web <span class="text-crisp-orange">Applications</span>
+          </h1>
+          <p class="text-xl md:text-2xl opacity-90 mb-8">
+            Transform your digital vision into reality with cutting-edge web applications built for performance, scalability, and user experience.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/contact" class="bg-crisp-orange hover:bg-crisp-orange/90 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
+              Start Your Project
+            </a>
+            <a href="#technologies" class="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-crisp-green px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200">
+              View Technologies
+            </a>
+          </div>
+        </div>
+        
+        {/* Hero Image */}
+        <div class="relative">
+          <div class="relative z-10">
+            <img 
+              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+              alt="Modern web development workspace"
+              class="rounded-2xl shadow-2xl"
+            />
+          </div>
+          {/* Decorative elements */}
+          <div class="absolute -top-6 -right-6 w-24 h-24 bg-crisp-orange/20 rounded-2xl -z-10"></div>
+          <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-white/20 rounded-2xl -z-10"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Key Benefits Section */}
+  <div class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Why Choose Our Web Development?</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          We don't just build websites – we craft digital experiences that drive business growth and user engagement.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Lightning Fast Performance</h3>
+          <p class="text-gray-600">Optimized for speed with modern build tools, CDN integration, and performance-first architecture.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Enterprise Security</h3>
+          <p class="text-gray-600">Built with security best practices, SSL encryption, and regular security audits to protect your data.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Scalable Architecture</h3>
+          <p class="text-gray-600">Future-proof solutions that grow with your business, from startup to enterprise scale.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Responsive Design</h3>
+          <p class="text-gray-600">Perfect user experience across all devices – desktop, tablet, and mobile optimized.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">SEO Optimized</h3>
+          <p class="text-gray-600">Built-in SEO best practices to help your website rank higher in search results.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">24/7 Support</h3>
+          <p class="text-gray-600">Ongoing maintenance, updates, and technical support to keep your website running smoothly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Services Breakdown */}
+  <div class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Our Web Development Services</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          From simple websites to complex web applications, we've got you covered with our comprehensive development services.
+        </p>
+      </div>
+      
+      <div class="space-y-8">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="p-8 lg:p-12">
+              <div class="inline-block bg-crisp-orange/10 rounded-xl px-4 py-2 mb-4">
+                <span class="text-sm font-semibold text-crisp-orange">🚀 Custom Development</span>
+              </div>
+              <h3 class="text-2xl md:text-3xl font-bold text-crisp-green mb-4">Custom Web Applications</h3>
+              <p class="text-gray-600 mb-6">
+                Tailored web applications built from scratch to meet your specific business requirements. We use modern frameworks like React, Astro, and Node.js to create powerful, scalable solutions.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Single Page Applications (SPAs)
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Progressive Web Apps (PWAs)
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  E-commerce Platforms
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Dashboard & Admin Panels
+                </li>
+              </ul>
+            </div>
+            <div class="lg:p-8">
+              <img 
+                src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                alt="Custom web application development"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="lg:p-8 order-2 lg:order-1">
+              <img 
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80" 
+                alt="API development and integration"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+            <div class="p-8 lg:p-12 order-1 lg:order-2">
+              <div class="inline-block bg-crisp-orange/10 rounded-xl px-4 py-2 mb-4">
+                <span class="text-sm font-semibold text-crisp-orange">🔗 Integration</span>
+              </div>
+              <h3 class="text-2xl md:text-3xl font-bold text-crisp-green mb-4">API Development & Integration</h3>
+              <p class="text-gray-600 mb-6">
+                Connect your web application with third-party services, payment gateways, and databases through robust API development and seamless integrations.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  RESTful API Development
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  GraphQL Implementation
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Payment Gateway Integration
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Database Design & Optimization
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Technologies Section */}
+  <div id="technologies" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Technologies We Use</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          We leverage the latest and most reliable technologies to build robust, scalable web applications.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">React</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">TypeScript</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="/src/assets/astro-icon-dark.svg" alt="Astro" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">Astro</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">Node.js</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">Tailwind</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">MongoDB</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">PostgreSQL</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">Python</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Golang" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">Golang</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">Express</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">Git</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <svg class="w-12 h-12 mb-3 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+          <span class="text-sm font-medium text-gray-700">GitHub</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Process Section */}
+  <div class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Our Development Process</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          From concept to deployment, we follow a proven methodology that ensures your project is delivered on time and exceeds expectations.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="bg-crisp-orange w-20 h-20 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 shadow-lg">
+            1
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Discovery & Planning</h3>
+          <p class="text-gray-600">
+            We analyze your requirements, target audience, and business goals to create a comprehensive project roadmap.
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <div class="bg-crisp-orange w-20 h-20 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 shadow-lg">
+            2
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Design & Prototyping</h3>
+          <p class="text-gray-600">
+            Create wireframes, mockups, and interactive prototypes to visualize the user experience before development.
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <div class="bg-crisp-orange w-20 h-20 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 shadow-lg">
+            3
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Development & Testing</h3>
+          <p class="text-gray-600">
+            Build your application using modern technologies with continuous testing and quality assurance throughout.
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <div class="bg-crisp-orange w-20 h-20 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 shadow-lg">
+            4
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Launch & Support</h3>
+          <p class="text-gray-600">
+            Deploy your application with ongoing monitoring, maintenance, and support to ensure optimal performance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Pricing Section */}
+  <div class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Web Development Packages</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Choose the perfect package for your project needs. All packages include responsive design, security features, and ongoing support.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+          <div class="text-center mb-8 flex-shrink-0">
+            <h3 class="text-2xl font-bold text-crisp-green mb-2">Starter</h3>
+            <p class="text-gray-600 mb-4">Perfect for small businesses and personal projects</p>
+            <div class="text-4xl font-bold text-crisp-orange mb-2">From £500</div>
+            <p class="text-sm text-gray-500">Starting price</p>
+          </div>
+          <ul class="space-y-3 mb-8 flex-grow">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Up to 5 pages
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Responsive design
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Contact form
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              SEO optimization
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              3 months support
+            </li>
+          </ul>
+          <a href="/contact" class="block w-full text-center bg-crisp-green text-white py-3 rounded-2xl font-semibold hover:bg-crisp-green/90 transition-colors duration-200 flex-shrink-0">
+            Get Started
+          </a>
+        </div>
+        
+        <div class="bg-crisp-orange rounded-2xl p-8 text-white relative overflow-hidden flex flex-col">
+          <div class="absolute top-2 right-2 bg-white text-crisp-orange px-3 py-1 rounded-full text-xs font-semibold">
+            Most Popular
+          </div>
+          <div class="text-center mb-8 flex-shrink-0">
+            <h3 class="text-2xl font-bold mb-2">Professional</h3>
+            <p class="text-white/90 mb-4">Ideal for growing businesses and e-commerce</p>
+            <div class="text-4xl font-bold mb-2">From £1,500</div>
+            <p class="text-sm text-white/70">Starting price</p>
+          </div>
+          <ul class="space-y-3 mb-8 flex-grow">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-white mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Up to 15 pages
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-white mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              E-commerce functionality
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-white mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Payment integration
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-white mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              User authentication
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-white mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              6 months support
+            </li>
+          </ul>
+          <a href="/contact" class="block w-full text-center bg-white text-crisp-orange py-3 rounded-2xl font-semibold hover:bg-gray-100 transition-colors duration-200 flex-shrink-0">
+            Get Started
+          </a>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+          <div class="text-center mb-8 flex-shrink-0">
+            <h3 class="text-2xl font-bold text-crisp-green mb-2">Enterprise</h3>
+            <p class="text-gray-600 mb-4">Custom solutions for large organizations and complex projects</p>
+            <div class="text-4xl font-bold text-crisp-orange mb-2">Custom Quote</div>
+            <p class="text-sm text-gray-500">Based on requirements</p>
+          </div>
+          <ul class="space-y-3 mb-8 flex-grow">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Unlimited pages
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Custom functionality
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              API development
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Advanced security
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              12 months support
+            </li>
+          </ul>
+          <a href="/contact" class="block w-full text-center bg-crisp-green text-white py-3 rounded-2xl font-semibold hover:bg-crisp-green/90 transition-colors duration-200 flex-shrink-0">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* FAQ Section */}
+  <div class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Frequently Asked Questions</h2>
+        <p class="text-xl text-gray-600">
+          Get answers to common questions about our web development services.
+        </p>
+      </div>
+      
+      <div class="space-y-6">
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">How long does it take to build a website?</h3>
+          <p class="text-gray-600">
+            Project timelines vary based on complexity and requirements. Simple websites typically take 2-4 weeks, while complex web applications can take 8-16 weeks. We'll provide a detailed timeline during our initial consultation.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">Do you provide ongoing maintenance and support?</h3>
+          <p class="text-gray-600">
+            Yes! All our packages include ongoing support and maintenance. This covers security updates, bug fixes, content updates, and technical support to keep your website running smoothly.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">Can you work with our existing design or branding?</h3>
+          <p class="text-gray-600">
+            Absolutely! We can work with your existing brand guidelines, design assets, and visual identity to ensure your website aligns perfectly with your brand. We can also help enhance and modernize your branding if needed.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">Will my website be mobile-friendly?</h3>
+          <p class="text-gray-600">
+            Yes, all websites we build are fully responsive and optimized for mobile devices. We follow mobile-first design principles to ensure your site looks and performs great on all screen sizes.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">Do you offer hosting and domain services?</h3>
+          <p class="text-gray-600">
+            We can help you choose and set up hosting and domain services from reliable providers. We also offer managed hosting solutions for clients who prefer a hands-off approach to website maintenance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Call to Action */}
+  <div class="relative py-20 overflow-hidden bg-crisp-green">
+    {/* Background Image */}
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+        alt="Team collaboration"
+        class="w-full h-full object-cover opacity-30"
+      />
+      <div class="absolute inset-0 bg-crisp-green/80"></div>
+    </div>
+    
+    <div class="relative z-10 text-center text-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6">Ready to Start Your Web Project?</h2>
+        <p class="text-xl md:text-2xl opacity-90 mb-10 max-w-3xl mx-auto">
+          Let's discuss your requirements and create a custom web solution that drives your business forward. 
+          Get a free consultation and project quote today.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+          <a href="/contact" class="bg-crisp-orange hover:bg-crisp-orange/90 text-white px-10 py-5 rounded-2xl font-semibold text-xl transition-colors duration-200 shadow-lg hover:shadow-xl">
+            Get Free Quote
+          </a>
+          <a href="/portfolio" class="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-crisp-green px-10 py-5 rounded-2xl font-semibold text-xl transition-colors duration-200">
+            View Our Work
+          </a>
+        </div>
+        <div class="mt-8 text-center">
+          <a href="/services" class="text-white/80 hover:text-white text-lg underline transition-colors duration-200">
+            ← View All Services
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
