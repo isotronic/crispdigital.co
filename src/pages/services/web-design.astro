@@ -1,0 +1,572 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Web Design Services - crispdigital">
+  {/* Breadcrumb Navigation */}
+  <div class="bg-gray-50 py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex text-sm text-gray-600">
+        <a href="/" class="hover:text-crisp-green transition-colors duration-200">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/services" class="hover:text-crisp-green transition-colors duration-200">Services</a>
+        <span class="mx-2">/</span>
+        <span class="text-crisp-green font-medium">Web Design</span>
+      </nav>
+    </div>
+  </div>
+
+  {/* Hero Section */}
+  <div class="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-crisp-green to-crisp-green/90">
+    {/* Background Image */}
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1710205295696-8aecb74a3ff4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+        alt="Color palettes"
+        class="w-full h-full object-cover opacity-20"
+      />
+    </div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        {/* Hero Content */}
+        <div class="text-center lg:text-left text-white">
+          <div class="inline-block bg-crisp-orange/20 backdrop-blur-sm rounded-2xl px-4 py-2 mb-6">
+            <span class="text-sm font-semibold text-crisp-orange">🎨 Creative Design Solutions</span>
+          </div>
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            Stunning Web <span class="text-crisp-orange">Design</span>
+          </h1>
+          <p class="text-xl md:text-2xl opacity-90 mb-8">
+            Transform your brand with captivating web designs that engage users, build trust, and drive conversions through thoughtful UI/UX experiences.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/contact" class="bg-crisp-orange hover:bg-crisp-orange/90 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
+              Start Your Design
+            </a>
+            <a href="#design-process" class="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-crisp-green px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200">
+              See Our Process
+            </a>
+          </div>
+        </div>
+        
+        {/* Hero Image */}
+        <div class="relative">
+          <div class="relative z-10">
+            <img 
+              src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+              alt="Web design interface with colorful website mockups and design elements"
+              class="rounded-2xl shadow-2xl"
+            />
+          </div>
+          {/* Decorative elements */}
+          <div class="absolute -top-6 -right-6 w-24 h-24 bg-crisp-orange/20 rounded-2xl -z-10"></div>
+          <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-white/20 rounded-2xl -z-10"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Key Benefits Section */}
+  <div class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Why Choose Our Web Design?</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          We don't just create beautiful websites – we craft user experiences that tell your story and achieve your business goals.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">User-Centered Design</h3>
+          <p class="text-gray-600">Every design decision is made with your users in mind, creating intuitive experiences that guide visitors toward your goals.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17v4a2 2 0 002 2h4M11 7h6a2 2 0 012 2v4a2 2 0 01-2 2h-1"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Brand Consistency</h3>
+          <p class="text-gray-600">Cohesive visual identity across all touchpoints that strengthens brand recognition and builds trust with your audience.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Mobile-First Approach</h3>
+          <p class="text-gray-600">Designs that prioritize mobile experience while scaling beautifully to desktop, ensuring optimal performance on all devices.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Conversion Focused</h3>
+          <p class="text-gray-600">Strategic design elements and user flows that guide visitors through your conversion funnel and maximize business results.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Fast Loading Times</h3>
+          <p class="text-gray-600">Optimized designs that prioritize performance, ensuring your beautiful site loads quickly and ranks well in search engines.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Future-Proof Design</h3>
+          <p class="text-gray-600">Modern design systems and patterns that remain fresh and functional as web standards and user expectations evolve.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Services Breakdown */}
+  <div class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Our Web Design Services</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          From concept to creation, we offer comprehensive design services that bring your vision to life with pixel-perfect precision.
+        </p>
+      </div>
+      
+      <div class="space-y-8">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="p-8 lg:p-12">
+              <div class="inline-block bg-crisp-orange/10 rounded-xl px-4 py-2 mb-4">
+                <span class="text-sm font-semibold text-crisp-orange">🎨 UI/UX Design</span>
+              </div>
+              <h3 class="text-2xl md:text-3xl font-bold text-crisp-green mb-4">User Interface & Experience Design</h3>
+              <p class="text-gray-600 mb-6">
+                Comprehensive UI/UX design that combines beautiful aesthetics with intuitive functionality. We create designs that users love to interact with and that drive business results.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  User Research & Personas
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Wireframes & Information Architecture
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Interactive Prototypes
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Usability Testing & Optimization
+                </li>
+              </ul>
+            </div>
+            <div class="lg:p-8">
+              <img 
+                src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                alt="UI/UX design process with wireframes and user flow diagrams"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="lg:p-8 order-2 lg:order-1">
+              <img 
+                src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" 
+                alt="Brand identity design with logo concepts and color palettes"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+            <div class="p-8 lg:p-12 order-1 lg:order-2">
+              <div class="inline-block bg-crisp-orange/10 rounded-xl px-4 py-2 mb-4">
+                <span class="text-sm font-semibold text-crisp-orange">🏢 Brand Identity</span>
+              </div>
+              <h3 class="text-2xl md:text-3xl font-bold text-crisp-green mb-4">Visual Brand Identity Design</h3>
+              <p class="text-gray-600 mb-6">
+                Complete brand identity systems that establish your unique visual voice and create memorable impressions across all digital touchpoints.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Logo Design & Variations
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Color Palette & Typography
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Brand Guidelines & Style Guide
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Marketing Material Templates
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Design Tools Section */}
+  <div class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Design Tools We Master</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          We use industry-leading design tools and software to create professional, pixel-perfect designs.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg" alt="Photoshop" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">Photoshop</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-plain.svg" alt="Illustrator" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">Illustrator</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">Canva</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sketch/sketch-original.svg" alt="Sketch" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">Sketch</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Design Process Section */}
+  <div id="design-process" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Our Design Process</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          From research to final design, we follow a proven methodology that ensures your project exceeds expectations and achieves your goals.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="bg-crisp-orange w-20 h-20 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 shadow-lg">
+            1
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Research & Strategy</h3>
+          <p class="text-gray-600">
+            Deep dive into your brand, audience, and goals to create a strategic foundation for exceptional design.
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <div class="bg-crisp-orange w-20 h-20 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 shadow-lg">
+            2
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Wireframes & Concepts</h3>
+          <p class="text-gray-600">
+            Create wireframes and initial concepts to establish information architecture and user flow before visual design.
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <div class="bg-crisp-orange w-20 h-20 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 shadow-lg">
+            3
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Visual Design & Prototyping</h3>
+          <p class="text-gray-600">
+            Bring designs to life with stunning visuals and interactive prototypes that showcase the final user experience.
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <div class="bg-crisp-orange w-20 h-20 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 shadow-lg">
+            4
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Testing & Refinement</h3>
+          <p class="text-gray-600">
+            Test designs with real users, gather feedback, and refine the experience for optimal usability and conversion.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Pricing Section */}
+  <div class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Web Design Packages</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Choose the perfect design package for your needs. All packages include responsive design, brand guidelines, and design files.
+        </p>
+      </div>
+      
+      <div class="pt-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+          <div class="text-center mb-8 flex-shrink-0">
+            <h3 class="text-2xl font-bold text-crisp-green mb-2">Essential</h3>
+            <p class="text-gray-600 mb-4">Perfect for startups and small businesses looking to establish their online presence</p>
+            <div class="text-4xl font-bold text-crisp-green mb-2">From £600</div>
+            <p class="text-sm text-gray-500">Starting price</p>
+          </div>
+          <ul class="space-y-3 mb-8 flex-grow">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Up to 5 page designs
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Mobile & desktop mockups
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Basic style guide
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Design files & assets
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              2 revision rounds
+            </li>
+          </ul>
+          <a href="/contact" class="block w-full text-center bg-crisp-green text-white py-3 rounded-2xl font-semibold hover:bg-crisp-green/90 transition-colors duration-200 flex-shrink-0">
+            Get Started
+          </a>
+        </div>
+        
+        <div class="bg-crisp-green rounded-2xl p-8 text-white relative flex flex-col">
+          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+            <span class="bg-crisp-orange text-white px-4 py-2 rounded-full text-sm font-semibold">Most Popular</span>
+          </div>
+          <div class="text-center mb-8 flex-shrink-0">
+            <h3 class="text-2xl font-bold mb-2">Professional</h3>
+            <p class="text-white/90 mb-4">Ideal for growing businesses and e-commerce</p>
+            <div class="text-4xl font-bold mb-2">From £1,200</div>
+            <p class="text-sm text-white/70">Starting price</p>
+          </div>
+          <ul class="space-y-3 mb-8 flex-grow">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Up to 15 page designs
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Interactive prototypes
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Complete brand identity
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              User journey mapping
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              4 revision rounds
+            </li>
+          </ul>
+          <a href="/contact" class="block w-full text-center bg-crisp-orange text-white py-3 rounded-2xl font-semibold hover:bg-crisp-orange/90 transition-colors duration-200 flex-shrink-0">
+            Get Started
+          </a>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+          <div class="text-center mb-8 flex-shrink-0">
+            <h3 class="text-2xl font-bold text-crisp-green mb-2">Enterprise</h3>
+            <p class="text-gray-600 mb-4">Complete design systems for large organizations and complex projects</p>
+            <div class="text-4xl font-bold text-crisp-green mb-2">Custom Quote</div>
+            <p class="text-sm text-gray-500">Based on requirements</p>
+          </div>
+          <ul class="space-y-3 mb-8 flex-grow">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Unlimited page designs
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Full design system
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              User research & testing
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Multi-platform design
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Unlimited revisions
+            </li>
+          </ul>
+          <a href="/contact" class="block w-full text-center bg-crisp-green text-white py-3 rounded-2xl font-semibold hover:bg-crisp-green/90 transition-colors duration-200 flex-shrink-0">
+            Contact Us
+          </a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  {/* FAQ Section */}
+  <div class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Frequently Asked Questions</h2>
+        <p class="text-xl text-gray-600">
+          Get answers to common questions about our web design services.
+        </p>
+      </div>
+      
+      <div class="space-y-6">
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">What's included in the design files?</h3>
+          <p class="text-gray-600">
+            You'll receive all source files in Figma or Adobe XD format, exported assets in various formats (PNG, SVG, JPG), style guide documentation, and design specifications for developers.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">How long does the design process take?</h3>
+          <p class="text-gray-600">
+            Design timelines vary based on project complexity. Essential packages typically take 1-2 weeks, Professional packages 3-4 weeks, and Enterprise projects 6-8 weeks. We'll provide a detailed timeline during consultation.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">Do you provide development services too?</h3>
+          <p class="text-gray-600">
+            Yes! We offer comprehensive web development services to bring your designs to life. We can handle the entire process from design to deployment, or work with your existing development team.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">Can you redesign our existing website?</h3>
+          <p class="text-gray-600">
+            Absolutely! We specialize in website redesigns that improve user experience, modernize visual appearance, and optimize for better conversion rates while maintaining your brand identity.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">What if we need changes after the project is complete?</h3>
+          <p class="text-gray-600">
+            We offer ongoing design support and maintenance services. Minor adjustments can be handled quickly, while larger changes may require a new project scope. We're always here to help your design evolve.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Call to Action */}
+  <div class="relative py-20 overflow-hidden bg-crisp-green">
+    {/* Background Image */}
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" 
+        alt="Creative team designing together"
+        class="w-full h-full object-cover opacity-30"
+      />
+      <div class="absolute inset-0 bg-crisp-green/80"></div>
+    </div>
+    
+    <div class="relative z-10 text-center text-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6">Ready to Transform Your Brand?</h2>
+        <p class="text-xl md:text-2xl opacity-90 mb-10 max-w-3xl mx-auto">
+          Let's create stunning designs that captivate your audience and drive results. 
+          Get a free design consultation and project quote today.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+          <a href="/contact" class="bg-crisp-orange hover:bg-crisp-orange/90 text-white px-10 py-5 rounded-2xl font-semibold text-xl transition-colors duration-200 shadow-lg hover:shadow-xl">
+            Get Free Quote
+          </a>
+          <a href="/portfolio" class="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-crisp-green px-10 py-5 rounded-2xl font-semibold text-xl transition-colors duration-200">
+            View Our Work
+          </a>
+        </div>
+        <div class="mt-8 text-center">
+          <a href="/services" class="text-white/80 hover:text-white text-lg underline transition-colors duration-200">
+            ← View All Services
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
