@@ -1,0 +1,641 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Mobile App Development Services - crispdigital">
+  {/* Breadcrumb Navigation */}
+  <div class="bg-gray-50 py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex text-sm text-gray-600">
+        <a href="/" class="hover:text-crisp-green transition-colors duration-200">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/services" class="hover:text-crisp-green transition-colors duration-200">Services</a>
+        <span class="mx-2">/</span>
+        <span class="text-crisp-green font-medium">Mobile App Development</span>
+      </nav>
+    </div>
+  </div>
+
+  {/* Hero Section */}
+  <div class="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-crisp-green to-crisp-green/90">
+    {/* Background Image */}
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+        alt="Mobile app development workspace with multiple devices"
+        class="w-full h-full object-cover opacity-20"
+      />
+    </div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        {/* Hero Content */}
+        <div class="text-center lg:text-left text-white">
+          <div class="inline-block bg-crisp-orange/20 backdrop-blur-sm rounded-2xl px-4 py-2 mb-6">
+            <span class="text-sm font-semibold text-crisp-orange">📱 Cross-Platform Excellence</span>
+          </div>
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            Mobile App <span class="text-crisp-orange">Development</span>
+          </h1>
+          <p class="text-xl md:text-2xl opacity-90 mb-8">
+            Build powerful, native-quality mobile applications with React Native. One codebase, two platforms - reach your entire audience efficiently.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/contact" class="bg-crisp-orange hover:bg-crisp-orange/90 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
+              Start Your App
+            </a>
+            <a href="#development-process" class="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-crisp-green px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200">
+              See Our Process
+            </a>
+          </div>
+        </div>
+        
+        {/* Hero Image */}
+        <div class="relative">
+          <div class="relative z-10">
+            <img 
+              src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" 
+              alt="Mobile app interface design with modern UI elements"
+              class="rounded-2xl shadow-2xl"
+            />
+          </div>
+          {/* Decorative elements */}
+          <div class="absolute -top-6 -right-6 w-24 h-24 bg-crisp-orange/20 rounded-2xl -z-10"></div>
+          <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-white/20 rounded-2xl -z-10"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Key Benefits Section */}
+  <div class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Why Choose React Native?</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          React Native combines the best of native and web development, delivering exceptional performance and user experience across platforms.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Cross-Platform Efficiency</h3>
+          <p class="text-gray-600">One codebase for both iOS and Android, reducing development time by up to 50% while maintaining native performance.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Native Performance</h3>
+          <p class="text-gray-600">React Native apps compile to native code, delivering smooth animations and responsive user interactions indistinguishable from native apps.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Faster Development</h3>
+          <p class="text-gray-600">Hot reloading and shared business logic accelerate development cycles, getting your app to market faster.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Cost-Effective</h3>
+          <p class="text-gray-600">Shared codebase means lower development and maintenance costs compared to building separate native apps.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Native UI Components</h3>
+          <p class="text-gray-600">Access to native UI components ensures your app feels natural and follows platform-specific design guidelines.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Proven Technology</h3>
+          <p class="text-gray-600">Used by Facebook, Instagram, Airbnb, and thousands of successful apps in the App Store and Google Play.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* App Types Section */}
+  <div class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Types of Apps We Build</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          From business applications to consumer apps, we develop mobile solutions that drive engagement and deliver results.
+        </p>
+      </div>
+      
+      <div class="space-y-8">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="p-8 lg:p-12">
+              <div class="inline-block bg-crisp-orange/10 rounded-xl px-4 py-2 mb-4">
+                <span class="text-sm font-semibold text-crisp-orange">🛍️ E-commerce Apps</span>
+              </div>
+              <h3 class="text-2xl md:text-3xl font-bold text-crisp-green mb-4">Shopping & E-commerce</h3>
+              <p class="text-gray-600 mb-6">
+                Feature-rich e-commerce applications with secure payment processing, inventory management, and seamless user experiences that drive sales.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Product Catalog & Search
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Secure Payment Integration
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Order Tracking & Management
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Push Notifications & Marketing
+                </li>
+              </ul>
+            </div>
+            <div class="lg:p-8">
+              <img 
+                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
+                alt="E-commerce mobile app interface showing product listings and shopping cart"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="lg:p-8 order-2 lg:order-1">
+              <img 
+                src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
+                alt="Business mobile app dashboard with analytics and data visualization"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+            <div class="p-8 lg:p-12 order-1 lg:order-2">
+              <div class="inline-block bg-crisp-orange/10 rounded-xl px-4 py-2 mb-4">
+                <span class="text-sm font-semibold text-crisp-orange">💼 Business Apps</span>
+              </div>
+              <h3 class="text-2xl md:text-3xl font-bold text-crisp-green mb-4">Business & Productivity</h3>
+              <p class="text-gray-600 mb-6">
+                Custom business applications that streamline operations, improve team collaboration, and boost productivity for your organization.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  CRM & Customer Management
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Project Management Tools
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Analytics & Reporting
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Team Collaboration Features
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="p-8 lg:p-12">
+              <div class="inline-block bg-crisp-orange/10 rounded-xl px-4 py-2 mb-4">
+                <span class="text-sm font-semibold text-crisp-orange">🎮 Consumer Apps</span>
+              </div>
+              <h3 class="text-2xl md:text-3xl font-bold text-crisp-green mb-4">Consumer & Entertainment</h3>
+              <p class="text-gray-600 mb-6">
+                Engaging consumer applications that delight users and build strong communities around your brand or service.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Social Features & Communities
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Media Streaming & Content
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Gamification & Rewards
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Location-Based Services
+                </li>
+              </ul>
+            </div>
+            <div class="lg:p-8">
+              <img 
+                src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2339&q=80" 
+                alt="Consumer mobile app interface with social features and entertainment content"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Technology Stack Section */}
+  <div class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Our Technology Stack</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          We use cutting-edge technologies and proven frameworks to build robust, scalable mobile applications.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-8">
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">React Native</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">TypeScript</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="/src/assets/expo-logo.svg" alt="Expo" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">Expo</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">Node.js</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">JavaScript</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Golang" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">Golang</span>
+        </div>
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">Git</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Development Process Section */}
+  <div id="development-process" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Our Development Process</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          From concept to App Store, we follow a proven methodology that ensures your mobile app exceeds expectations and achieves success.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div class="text-center">
+          <div class="bg-crisp-orange w-20 h-20 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 shadow-lg">
+            1
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Discovery & Planning</h3>
+          <p class="text-gray-600">
+            Define app requirements, target audience, and create detailed project roadmap with user stories and technical specifications.
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <div class="bg-crisp-orange w-20 h-20 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 shadow-lg">
+            2
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">UI/UX Design</h3>
+          <p class="text-gray-600">
+            Create wireframes, user flows, and high-fidelity designs that provide exceptional user experience across platforms.
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <div class="bg-crisp-orange w-20 h-20 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 shadow-lg">
+            3
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Development</h3>
+          <p class="text-gray-600">
+            Build the app using React Native with agile methodology, providing regular updates and incorporating feedback throughout.
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <div class="bg-crisp-orange w-20 h-20 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 shadow-lg">
+            4
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Testing & QA</h3>
+          <p class="text-gray-600">
+            Comprehensive testing on real devices, performance optimization, and quality assurance to ensure flawless user experience.
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <div class="bg-crisp-orange w-20 h-20 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 shadow-lg">
+            5
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Launch & Support</h3>
+          <p class="text-gray-600">
+            App Store submission, launch strategy, and ongoing maintenance to keep your app updated and performing optimally.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Pricing Section */}
+  <div class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Mobile App Development Packages</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Flexible packages designed to meet your app development needs. All packages include cross-platform development, testing, and deployment.
+        </p>
+      </div>
+      
+      <div class="pt-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+          <div class="text-center mb-8 flex-shrink-0">
+            <h3 class="text-2xl font-bold text-crisp-green mb-2">MVP</h3>
+            <p class="text-gray-600 mb-4">Perfect for startups and proof of concepts</p>
+            <div class="text-4xl font-bold text-crisp-orange mb-2">From £3,000</div>
+            <p class="text-sm text-gray-500">Starting price</p>
+          </div>
+          <ul class="space-y-3 mb-8 flex-grow">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Core features & functionality
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Cross-platform deployment
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Basic UI/UX design
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Basic testing & QA
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              App Store submission
+            </li>
+          </ul>
+          <a href="/contact" class="block w-full text-center bg-crisp-green text-white py-3 rounded-2xl font-semibold hover:bg-crisp-green/90 transition-colors duration-200 flex-shrink-0">
+            Get Started
+          </a>
+        </div>
+        
+        <div class="bg-crisp-orange rounded-2xl p-8 text-white relative flex flex-col">
+          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+            <span class="bg-crisp-green text-white px-4 py-2 rounded-full text-sm font-semibold">Most Popular</span>
+          </div>
+          <div class="text-center mb-8 flex-shrink-0">
+            <h3 class="text-2xl font-bold mb-2">Professional</h3>
+            <p class="text-white/90 mb-4">Complete app solution for businesses</p>
+            <div class="text-4xl font-bold mb-2">From £8,000</div>
+            <p class="text-sm text-white/70">Starting price</p>
+          </div>
+          <ul class="space-y-3 mb-8 flex-grow">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-white mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Advanced features & integrations
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-white mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Custom UI/UX design
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-white mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Backend & API development
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-white mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Comprehensive testing
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-white mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              3 months post-launch support
+            </li>
+          </ul>
+          <a href="/contact" class="block w-full text-center bg-white text-crisp-orange py-3 rounded-2xl font-semibold hover:bg-gray-100 transition-colors duration-200 flex-shrink-0">
+            Get Started
+          </a>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+          <div class="text-center mb-8 flex-shrink-0">
+            <h3 class="text-2xl font-bold text-crisp-green mb-2">Enterprise</h3>
+            <p class="text-gray-600 mb-4">Complex apps with advanced features</p>
+            <div class="text-4xl font-bold text-crisp-orange mb-2">Custom Quote</div>
+            <p class="text-sm text-gray-500">Based on requirements</p>
+          </div>
+          <ul class="space-y-3 mb-8 flex-grow">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Enterprise-grade security
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Complex integrations
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Scalable architecture
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Dedicated team & project manager
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              12 months support & maintenance
+            </li>
+          </ul>
+          <a href="/contact" class="block w-full text-center bg-crisp-green text-white py-3 rounded-2xl font-semibold hover:bg-crisp-green/90 transition-colors duration-200 flex-shrink-0">
+            Contact Us
+          </a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  {/* FAQ Section */}
+  <div class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Frequently Asked Questions</h2>
+        <p class="text-xl text-gray-600">
+          Get answers to common questions about our mobile app development services.
+        </p>
+      </div>
+      
+      <div class="space-y-6">
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">How long does it take to develop a mobile app?</h3>
+          <p class="text-gray-600">
+            Development time varies based on complexity. MVP apps typically take 8-12 weeks, Professional apps 16-20 weeks, and Enterprise apps 24-32 weeks. We provide detailed timelines during project planning.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">Will my app work on both iOS and Android?</h3>
+          <p class="text-gray-600">
+            Yes! We use React Native to build cross-platform apps that work natively on both iOS and Android devices, reducing development time and costs while maintaining native performance.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">Do you handle App Store submissions?</h3>
+          <p class="text-gray-600">
+            Absolutely! We handle the entire submission process for both the Apple App Store and Google Play Store, including creating store listings, preparing assets, and managing the approval process.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">Can you integrate with existing systems?</h3>
+          <p class="text-gray-600">
+            Yes, we specialize in integrating apps with existing business systems, APIs, databases, and third-party services to ensure seamless workflow and data synchronization.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">What about ongoing maintenance and updates?</h3>
+          <p class="text-gray-600">
+            We offer ongoing maintenance packages to keep your app updated with the latest OS versions, security patches, and feature enhancements. All packages include initial post-launch support.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Call to Action */}
+  <div class="relative py-20 overflow-hidden bg-crisp-green">
+    {/* Background Image */}
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" 
+        alt="Mobile app development team collaborating"
+        class="w-full h-full object-cover opacity-30"
+      />
+      <div class="absolute inset-0 bg-crisp-green/80"></div>
+    </div>
+    
+    <div class="relative z-10 text-center text-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6">Ready to Build Your Mobile App?</h2>
+        <p class="text-xl md:text-2xl opacity-90 mb-10 max-w-3xl mx-auto">
+          Transform your idea into a powerful mobile application that engages users and drives business growth. 
+          Get a free consultation and project quote today.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+          <a href="/contact" class="bg-crisp-orange hover:bg-crisp-orange/90 text-white px-10 py-5 rounded-2xl font-semibold text-xl transition-colors duration-200 shadow-lg hover:shadow-xl">
+            Get Free Quote
+          </a>
+          <a href="/portfolio" class="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-crisp-green px-10 py-5 rounded-2xl font-semibold text-xl transition-colors duration-200">
+            View Our Work
+          </a>
+        </div>
+        <div class="mt-8 text-center">
+          <a href="/services" class="text-white/80 hover:text-white text-lg underline transition-colors duration-200">
+            ← View All Services
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
