@@ -136,7 +136,7 @@ const Header: React.FC<HeaderProps> = ({ currentPath = "/" }) => {
                                 {service.name === "Web Development" && "Custom applications & solutions"}
                                 {service.name === "Web Design" && "Beautiful, user-focused designs"}
                                 {service.name === "Mobile App Development" && "React Native iOS & Android apps"}
-                                {service.name === "Website Maintenance" && "Ongoing care & optimization"}
+                                {service.name === "Website Maintenance" && "Ongoing care & optimisation"}
                                 {service.name === "WordPress Development" && "Complete WordPress solutions"}
                               </div>
                             </div>

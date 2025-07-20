@@ -39,7 +39,7 @@ const FeaturesSection: React.FC = () => {
             </div>
             <h3 className="text-xl font-semibold text-crisp-green mb-4">Fast Performance</h3>
             <p className="text-gray-600">
-              Lightning-fast loading speeds and optimal performance with modern optimization techniques and best
+              Lightning-fast loading speeds and optimal performance with modern optimisation techniques and best
               practices.
             </p>
           </div>
