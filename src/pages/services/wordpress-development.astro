@@ -1,0 +1,614 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="WordPress Development Services - crispdigital">
+  {/* Breadcrumb Navigation */}
+  <div class="bg-gray-50 py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex text-sm text-gray-600">
+        <a href="/" class="hover:text-crisp-green transition-colors duration-200">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/services" class="hover:text-crisp-green transition-colors duration-200">Services</a>
+        <span class="mx-2">/</span>
+        <span class="text-crisp-green font-medium">WordPress Development</span>
+      </nav>
+    </div>
+  </div>
+
+  {/* Hero Section */}
+  <div class="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-crisp-green to-crisp-green/90">
+    {/* Background Image */}
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80" 
+        alt="WordPress development workspace with dashboard and analytics"
+        class="w-full h-full object-cover opacity-20"
+      />
+    </div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        {/* Hero Content */}
+        <div class="text-center lg:text-left text-white">
+          <div class="inline-block bg-crisp-orange/20 backdrop-blur-sm rounded-2xl px-4 py-2 mb-6">
+            <span class="text-sm font-semibold text-crisp-orange">🚀 Powered by WordPress</span>
+          </div>
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            WordPress <span class="text-crisp-orange">Development</span>
+          </h1>
+          <p class="text-xl md:text-2xl opacity-90 mb-8">
+            Build powerful, scalable websites with the world's most popular CMS. Custom themes, plugins, and complete WordPress solutions that grow with your business.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/contact" class="bg-crisp-orange hover:bg-crisp-orange/90 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
+              Start Your Project
+            </a>
+            <a href="#wordpress-process" class="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-crisp-green px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200">
+              See Our Process
+            </a>
+          </div>
+        </div>
+        
+        {/* Hero Image */}
+        <div class="relative">
+          <div class="relative z-10">
+            <img 
+              src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2339&q=80" 
+              alt="WordPress website development with modern design interface"
+              class="rounded-2xl shadow-2xl"
+            />
+          </div>
+          {/* Decorative elements */}
+          <div class="absolute -top-6 -right-6 w-24 h-24 bg-crisp-orange/20 rounded-2xl -z-10"></div>
+          <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-white/20 rounded-2xl -z-10"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Key Benefits Section */}
+  <div class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Why Choose WordPress?</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          WordPress powers over 40% of all websites globally. It's flexible, scalable, and perfect for businesses of all sizes looking for a powerful content management solution.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a1 1 0 01-1-1V9a1 1 0 011-1h1a2 2 0 100-4H4a1 1 0 01-1-1V4a1 1 0 011-1h3a1 1 0 001-1v-1a2 2 0 114 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Easy Content Management</h3>
+          <p class="text-gray-600">Intuitive admin interface that allows you to easily update content, add pages, manage media, and maintain your website without technical knowledge.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Extensive Plugin Ecosystem</h3>
+          <p class="text-gray-600">Access to over 60,000 plugins to extend functionality - from SEO tools to e-commerce solutions, contact forms to security enhancements.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">SEO-Friendly</h3>
+          <p class="text-gray-600">Built-in SEO capabilities with clean URLs, meta tags, and compatibility with powerful SEO plugins like Yoast and RankMath for better search rankings.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Scalable & Flexible</h3>
+          <p class="text-gray-600">Grows with your business from simple blogs to complex enterprise websites with custom functionality and integrations.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Cost-Effective</h3>
+          <p class="text-gray-600">Open-source platform with lower development costs compared to custom solutions, while still offering enterprise-level functionality.</p>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          <div class="w-16 h-16 bg-crisp-orange rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Secure & Reliable</h3>
+          <p class="text-gray-600">Regular security updates, robust user management, and compatibility with leading security plugins to keep your website protected.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* WordPress Solutions Section */}
+  <div class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">WordPress Solutions We Deliver</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          From simple brochure sites to complex e-commerce platforms, we build WordPress solutions tailored to your specific business needs.
+        </p>
+      </div>
+      
+      <div class="space-y-8">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="p-8 lg:p-12">
+              <div class="inline-block bg-crisp-orange/10 rounded-xl px-4 py-2 mb-4">
+                <span class="text-sm font-semibold text-crisp-orange">🏢 Business Websites</span>
+              </div>
+              <h3 class="text-2xl md:text-3xl font-bold text-crisp-green mb-4">Professional Business Websites</h3>
+              <p class="text-gray-600 mb-6">
+                Create a powerful online presence with custom WordPress themes designed for your brand. Perfect for showcasing your services, building credibility, and generating leads.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Custom theme development tailored to your brand
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Contact forms and lead generation tools
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  SEO optimization and Google Analytics integration
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Mobile-responsive design for all devices
+                </li>
+              </ul>
+            </div>
+            <div class="lg:p-8">
+              <img 
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80" 
+                alt="Professional WordPress business website dashboard"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="lg:p-8 order-2 lg:order-1">
+              <img 
+                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
+                alt="WooCommerce e-commerce store interface with shopping cart"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+            <div class="p-8 lg:p-12 order-1 lg:order-2">
+              <div class="inline-block bg-crisp-green/10 rounded-xl px-4 py-2 mb-4">
+                <span class="text-sm font-semibold text-crisp-green">🛒 E-commerce Stores</span>
+              </div>
+              <h3 class="text-2xl md:text-3xl font-bold text-crisp-green mb-4">WooCommerce Online Stores</h3>
+              <p class="text-gray-600 mb-6">
+                Build powerful online stores with WooCommerce integration. Complete e-commerce solutions with payment processing, inventory management, and customer accounts.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  WooCommerce setup and customization
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Payment gateway integration (Stripe, PayPal, etc.)
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Product catalog and inventory management
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-green mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Customer accounts and order tracking
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="p-8 lg:p-12">
+              <div class="inline-block bg-crisp-orange/10 rounded-xl px-4 py-2 mb-4">
+                <span class="text-sm font-semibold text-crisp-orange">⚡ Custom Plugins</span>
+              </div>
+              <h3 class="text-2xl md:text-3xl font-bold text-crisp-green mb-4">Custom Plugin Development</h3>
+              <p class="text-gray-600 mb-6">
+                Extend WordPress functionality with custom plugins built specifically for your business needs. From simple features to complex integrations.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Custom functionality development
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Third-party API integrations
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Database management and optimization
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  WordPress hooks and filters implementation
+                </li>
+              </ul>
+            </div>
+            <div class="lg:p-8">
+              <img 
+                src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
+                alt="WordPress plugin development code editor interface"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Technology Stack */}
+  <div class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Our WordPress Technology Stack</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          We use the latest tools and technologies to build fast, secure, and scalable WordPress websites.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="WordPress" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">WordPress</span>
+        </div>
+        
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">PHP</span>
+        </div>
+        
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">MySQL</span>
+        </div>
+        
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">JavaScript</span>
+        </div>
+        
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">CSS3</span>
+        </div>
+        
+        <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-12 h-12 mb-3" />
+          <span class="text-sm font-medium text-gray-700">Git</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Development Process */}
+  <div id="wordpress-process" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Our WordPress Development Process</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          From concept to deployment, we follow a proven methodology that ensures your WordPress project is delivered on time and exceeds expectations.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="bg-crisp-orange w-20 h-20 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 shadow-lg">
+            1
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Discovery & Planning</h3>
+          <p class="text-gray-600">
+            We analyze your requirements, target audience, and business goals to create a comprehensive WordPress roadmap.
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <div class="bg-crisp-orange w-20 h-20 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 shadow-lg">
+            2
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Design & Prototyping</h3>
+          <p class="text-gray-600">
+            Create wireframes, mockups, and interactive prototypes to visualize the user experience before development.
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <div class="bg-crisp-orange w-20 h-20 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 shadow-lg">
+            3
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Development & Testing</h3>
+          <p class="text-gray-600">
+            Build your WordPress site using modern technologies with continuous testing and quality assurance throughout.
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <div class="bg-crisp-orange w-20 h-20 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 shadow-lg">
+            4
+          </div>
+          <h3 class="text-xl font-bold text-crisp-green mb-4">Launch & Support</h3>
+          <p class="text-gray-600">
+            Deploy your WordPress website with ongoing monitoring, maintenance, and support to ensure optimal performance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Pricing Section */}
+  <div class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">WordPress Development Packages</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Choose the perfect package for your WordPress project needs. All packages include hosting setup, SSL certificate, and basic SEO optimization.
+        </p>
+      </div>
+      
+      <div class="pt-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+          <div class="text-center mb-8 flex-shrink-0">
+            <h3 class="text-2xl font-bold text-crisp-green mb-2">Business Website</h3>
+            <p class="text-gray-600 mb-4">Perfect for small businesses and professional sites</p>
+            <div class="text-4xl font-bold text-crisp-orange mb-2">From £1,200</div>
+            <p class="text-sm text-gray-500">Starting price</p>
+          </div>
+          <ul class="space-y-3 mb-8 flex-grow">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Custom WordPress theme
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              5-10 pages
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Contact forms
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              SEO optimization
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              1 month support
+            </li>
+          </ul>
+          <a href="/contact" class="block w-full text-center bg-crisp-green text-white py-3 rounded-2xl font-semibold hover:bg-crisp-green/90 transition-colors duration-200 flex-shrink-0">
+            Get Started
+          </a>
+        </div>
+        
+        <div class="bg-crisp-orange rounded-2xl p-8 text-white relative flex flex-col">
+          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+            <span class="bg-crisp-green text-white px-4 py-2 rounded-full text-sm font-semibold">Most Popular</span>
+          </div>
+          <div class="text-center mb-8 flex-shrink-0">
+            <h3 class="text-2xl font-bold mb-2">E-commerce Store</h3>
+            <p class="text-white/90 mb-4">Ideal for online stores and WooCommerce sites</p>
+            <div class="text-4xl font-bold mb-2">From £2,200</div>
+            <p class="text-sm text-white/70">Starting price</p>
+          </div>
+          <ul class="space-y-3 mb-8 flex-grow">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-white mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Custom WooCommerce setup
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-white mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Product catalog (up to 100 products)
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-white mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Payment gateway integration
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-white mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Inventory management
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-white mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              3 months support
+            </li>
+          </ul>
+          <a href="/contact" class="block w-full text-center bg-white text-crisp-orange py-3 rounded-2xl font-semibold hover:bg-gray-100 transition-colors duration-200 flex-shrink-0">
+            Get Started
+          </a>
+        </div>
+        
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+          <div class="text-center mb-8 flex-shrink-0">
+            <h3 class="text-2xl font-bold text-crisp-green mb-2">Enterprise Solution</h3>
+            <p class="text-gray-600 mb-4">Custom solutions for large organizations and complex projects</p>
+            <div class="text-4xl font-bold text-crisp-orange mb-2">Custom Quote</div>
+            <p class="text-sm text-gray-500">Based on requirements</p>
+          </div>
+          <ul class="space-y-3 mb-8 flex-grow">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Complex custom functionality
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Custom plugin development
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Third-party integrations
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Multisite setup
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-crisp-orange mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Ongoing maintenance
+            </li>
+          </ul>
+          <a href="/contact" class="block w-full text-center bg-crisp-green text-white py-3 rounded-2xl font-semibold hover:bg-crisp-green/90 transition-colors duration-200 flex-shrink-0">
+            Contact Us
+          </a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  {/* FAQ Section */}
+  <div class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-crisp-green mb-6">Frequently Asked Questions</h2>
+        <p class="text-xl text-gray-600">
+          Common questions about our WordPress development services
+        </p>
+      </div>
+      
+      <div class="space-y-6">
+        <div class="bg-white rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">How long does it take to build a WordPress website?</h3>
+          <p class="text-gray-600">
+            A typical business website takes 2-4 weeks, while e-commerce stores take 4-8 weeks. Complex custom solutions may take longer depending on requirements. We provide detailed timelines during the planning phase.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">Do you provide ongoing maintenance and support?</h3>
+          <p class="text-gray-600">
+            Yes, we offer comprehensive maintenance packages including updates, security monitoring, backups, and technical support. Our maintenance plans start from £50/month and can be customized to your needs.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">Can you migrate an existing website to WordPress?</h3>
+          <p class="text-gray-600">
+            Absolutely! We specialize in website migrations from various platforms to WordPress. We ensure all content, SEO rankings, and functionality are preserved during the migration process.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">Will I be able to update content myself?</h3>
+          <p class="text-gray-600">
+            Yes, WordPress is designed for easy content management. We provide training and documentation so you can easily update content, add pages, and manage your website independently.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-crisp-green mb-3">Do you develop custom plugins and themes?</h3>
+          <p class="text-gray-600">
+            Yes, we develop custom WordPress themes and plugins tailored to your specific requirements. All our custom code follows WordPress best practices and coding standards.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* CTA Section */}
+  <div class="py-20 bg-crisp-green">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Build Your WordPress Website?</h2>
+      <p class="text-xl opacity-90 mb-8">
+        Let's discuss your WordPress project and create a powerful, scalable website that grows with your business.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="bg-crisp-orange hover:bg-crisp-orange/90 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
+          Start Your Project
+        </a>
+        <a href="/portfolio" class="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-crisp-green px-8 py-4 rounded-2xl font-semibold text-lg transition-colors duration-200">
+          View Our Work
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>
